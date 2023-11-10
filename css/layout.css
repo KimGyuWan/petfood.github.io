@@ -1,0 +1,43 @@
+#topbanner {
+  line-height: 2;
+  border-bottom: 1px solid #ccc;
+}
+
+#logo {
+  height: 400px;
+  border-bottom: 1px solid #ccc;
+}
+
+#gnb {
+  line-height: 4;
+  border-bottom: 1px solid #ccc;
+}
+
+header ul {
+  border-bottom: 1px solid #ccc;
+}
+
+#slide-banner {
+  height: 500px;
+  border-bottom: 1px solid #ccc;
+}
+
+#section-brand {
+  height: 500px;
+  border-bottom: 1px solid #ccc;
+}
+
+#section-item {
+  height: 500px;
+  border-bottom: 1px solid #ccc;
+}
+
+#section-instagram {
+  height: 500px;
+  border-bottom: 1px solid #ccc;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
