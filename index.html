@@ -25,13 +25,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 스타일페이지 -->
-    <link rel="stylesheet" href="./common.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/instagram.css">
     <!-- 바닐라js -->
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-2.2.4.js"
       integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/layout.css">
   </head>
 
   <body>
@@ -68,6 +67,184 @@
         </section>
         <section id="section-instagram">
           <h2>INSTAGRAM후기</h2>
+          <div class="istagramMain"><img src="./instagramimg/instagramMain.png" alt=""></div>
+          <div class="d-flex insta">
+            <div class="swiper instagroup1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram1.jpg" alt="인스타후기사진1"></a></div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram2.jpg" alt="인스타후기사진2"></a></div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram3.jpg" alt="인스타후기사진3"></a></div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram4.jpg" alt="인스타후기사진4"></a></div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram5.jpg" alt="인스타후기사진5"></a></div>
+              </div>
+            </div>
+            <div class="swiper instagroup2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram6.jpg" alt="인스타후기사진6"></a></div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram7.jpg" alt="인스타후기사진7"></a></div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram8.jpg" alt="인스타후기사진8"></a></div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram9.jpg" alt="인스타후기사진9"></a></div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram10.jpg" alt="인스타후기사진10"></a></div>
+              </div>
+            </div>
+            <script>
+              const swiper = new Swiper('.swiper', {
+                direction: 'vertical',
+                speed: 10000,
+                loop: true,
+                autoplay: {
+                  delay: 0,
+                  disableOnInteraction: false,
+                }, slidesPerView: 2.5,
+                centeredSlides: true,
+              });
+            </script>
+            <!-- <ul class="group1">
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram1.jpg" alt="인스타1"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram2.jpg" alt="인스타2"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram3.jpg" alt="인스타3"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram4.jpg" alt="인스타4"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram5.jpg" alt="인스타5"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram1.jpg" alt="인스타1"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram2.jpg" alt="인스타2"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram3.jpg" alt="인스타3"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram4.jpg" alt="인스타4"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram5.jpg" alt="인스타5"></div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <ul class="group2">
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram6.jpg" alt="인스타6"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram7.jpg" alt="인스타7"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram8.jpg" alt="인스타8"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram9.jpg" alt="인스타9"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram10.jpg" alt="인스타10"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram6.jpg" alt="인스타6"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram7.jpg" alt="인스타7"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram8.jpg" alt="인스타8"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram9.jpg" alt="인스타9"></div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a href="">
+                    <div class="img"><img src="./instagramimg/instagram10.jpg" alt="인스타10"></div>
+                  </a>
+                </div>
+              </li>
+            </ul> -->
+          </div>
+
         </section>
         <section id="form" class="sec">
           <form action="">
