@@ -46,6 +46,7 @@ header ul {
 
 #slide-banner {
   position: relative;
+  height: auto;
   border-bottom: 1px solid #ccc;
 }
 
@@ -114,4 +115,18 @@ header ul {
   font-size: 4rem;
   color: #e40118;
   font-weight: 400;
+}
+
+.swiper-pagination-bullet {
+  width: 1rem;
+  height: 1rem;
+  background-color: rgba(225, 225, 225, 0.5);
+  border: 2px solid #e40118;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #e40118;
+  width: 2rem;
+  border-radius: 2rem;
 }
