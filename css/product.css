@@ -1,0 +1,108 @@
+#section-item {
+  background-image: url("../instagramimg_product/product/productbackgroundimage8.jpg");
+  position: relative;
+}
+
+/* 검색창 */
+
+.inputbutton {
+  position: relative;
+}
+
+.itemgroup {
+  width: 900px;
+  height: 700px;
+  background-color: white;
+  position: relative;
+  left: 600px;
+  border: 1px solid #ccc;
+}
+
+.itemgroup input:focus {
+  outline: none;
+}
+
+.itemgroup input {
+  border: 3px solid rgb(252, 109, 158);
+  border-radius: 3rem;
+  font-size: 2rem;
+  width: 600px;
+  height: 70px;
+  position: relative;
+  left: 140px;
+  top: 40px;
+}
+
+.itemgroup button {
+  border: 0;
+  background-color: rgb(252, 109, 158);
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  padding: 0.8rem 1.3rem;
+  position: relative;
+  top: 37px;
+  left: 66px;
+}
+
+.textbox {
+  position: absolute;
+  color: white;
+  left: 50px;
+  top: 50px;
+}
+
+.textbox p:first-child {
+  font-size: 2.5rem;
+}
+
+.textbox p:last-child {
+  font-size: 1.5rem;
+}
+
+/* 상품항목 */
+
+.listgroup {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 150px;
+}
+
+.listgroup div {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-left: 40px;
+}
+
+.mainlist .tap ul {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  display: none;
+}
+
+.mainlist .tap {
+  display: inline-flex;
+}
+
+.tap.active ul {
+  display: block;
+}
+
+.tap>a {
+  padding: 0.2rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+
+.tap.active a {
+  background-color: rgb(218, 41, 28);
+  color: white;
+}

@@ -18,19 +18,22 @@
     <!-- 초기화 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <!-- 공통클래스, 부트스트랩 v4.6 -->
-    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- 플러그인 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 스타일페이지 -->
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/instagram.css">
+    <link rel="stylesheet" href="./css/product.css">
     <!-- 바닐라js -->
+
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-2.2.4.js"
       integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="/js/product.js"></script>
   </head>
 
   <body>
@@ -64,36 +67,171 @@
         </section>
         <section id="section-item">
           <h2>상품들</h2>
+          <div class="textbox">
+            <p>알맞은 제품을 찾고 계세요?</p>
+            <p>핫 키워드 제품을 찾아보세요!!</p>
+          </div>
+          <div class="itemgroup">
+            <div class="inputbutton">
+              <input type="text" placeholder="검색키워드를 입력해주세요.">
+              <button><i class="bi bi-search-heart"></i></button>
+            </div>
+            <div class="listgroup">
+              <ul class="mainlist">
+                <li class="tap active"><a href="">#우리 아이들도 100세까지</a>
+                  <ul class="d-flex flex-wrap row">
+                    <li class="col-4"><a href="#none">
+                        <div>1</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>2</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>3</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>4</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>5</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>6</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="tap"><a href="">#간식 / 영양제</a>
+                  <ul class="d-flex flex-wrap row">
+                    <li class="col-4"><a href="#none">
+                        <div>7</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>8</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>9</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>10</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>11</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>12</div>
+                      </a></li>
+                  </ul>
+                </li>
+                <li class="tap"><a href="">#휴먼그레이드 PICK</a>
+                  <ul class="d-flex flex-wrap row">
+                    <li class="col-4"><a href="#none">
+                        <div>13</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>14</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>15</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>16</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>17</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>18</div>
+                      </a></li>
+                  </ul>
+                </li>
+                <li class="tap"><a href="">#가장 맛있는 시간 30일</a>
+                  <ul class="d-flex flex-wrap row">
+                    <li class="col-4"><a href="#none">
+                        <div>19</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>20</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>21</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>22</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>23</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>24</div>
+                      </a></li>
+                  </ul>
+                </li>
+                <li class="tap"><a href="">하림펫푸드 PICK ITEM</a>
+                  <ul class="d-flex flex-wrap row">
+                    <li class="col-4"><a href="#none">
+                        <div>25</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>26</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>27</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>28</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>29</div>
+                      </a></li>
+                    <li class="col-4"><a href="#none">
+                        <div>30</div>
+                      </a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
         <section id="section-instagram">
           <h2>INSTAGRAM후기</h2>
-          <div class="istagramMain"><img src="./instagramimg/instagramMain.png" alt=""></div>
+          <div class="istagramMain"><img src="./instagramimg_product/instagram/instagramMain.png" alt=""></div>
           <div class="d-flex insta">
             <div class="swiper instagroup1">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram1.jpg" alt="인스타후기사진1"></a>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram1.jpg"
+                      alt="인스타후기사진1"></a>
                 </div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram2.jpg" alt="인스타후기사진2"></a>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram2.jpg"
+                      alt="인스타후기사진2"></a>
                 </div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram3.jpg" alt="인스타후기사진3"></a>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram3.jpg"
+                      alt="인스타후기사진3"></a>
                 </div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram4.jpg" alt="인스타후기사진4"></a>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram4.jpg"
+                      alt="인스타후기사진4"></a>
                 </div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram5.jpg" alt="인스타후기사진5"></a>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram5.jpg"
+                      alt="인스타후기사진5"></a>
                 </div>
               </div>
             </div>
             <div class="swiper instagroup2">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram6.jpg" alt="인스타후기사진6"></a>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram6.jpg"
+                      alt="인스타후기사진6"></a>
                 </div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram7.jpg" alt="인스타후기사진7"></a>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram7.jpg"
+                      alt="인스타후기사진7"></a>
                 </div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram8.jpg" alt="인스타후기사진8"></a>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram8.jpg"
+                      alt="인스타후기사진8"></a>
                 </div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram9.jpg" alt="인스타후기사진9"></a>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram9.jpg"
+                      alt="인스타후기사진9"></a>
                 </div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram10.jpg" alt="인스타후기사진10"></a>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram10.jpg"
+                      alt="인스타후기사진10"></a>
                 </div>
               </div>
             </div>
@@ -105,8 +243,8 @@
                 autoplay: {
                   delay: 0,
                   disableOnInteraction: false,
-                }, slidesPerView: 1,
-                centeredSlides: true, 
+                }, slidesPerView: 2.5,
+                centeredSlides: true,
                 slidesPerView: 1,
                 spaceBetween: 10,
                 breakpoints: {
