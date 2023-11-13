@@ -75,10 +75,10 @@
 
 .insta {
   width: 510px;
-  height: 652px;
+  height: 700px;
   display: flex;
-  position: absolute;
-  right: 7%;
+  position: relative;
+  left: 100px;
   /* 왼쪽 메인 사진 계산해야함 */
 }
 
@@ -92,13 +92,13 @@
 
 #section-instagram {
   position: relative;
+  display: flex;
 }
 
 .istagramMain img {
   width: 450px;
   height: auto;
-  position: absolute;
+  position: relative;
   top: 13%;
   left: 5%;
 }
-

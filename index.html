@@ -71,20 +71,30 @@
           <div class="d-flex insta">
             <div class="swiper instagroup1">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram1.jpg" alt="인스타후기사진1"></a></div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram2.jpg" alt="인스타후기사진2"></a></div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram3.jpg" alt="인스타후기사진3"></a></div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram4.jpg" alt="인스타후기사진4"></a></div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram5.jpg" alt="인스타후기사진5"></a></div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram1.jpg" alt="인스타후기사진1"></a>
+                </div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram2.jpg" alt="인스타후기사진2"></a>
+                </div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram3.jpg" alt="인스타후기사진3"></a>
+                </div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram4.jpg" alt="인스타후기사진4"></a>
+                </div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram5.jpg" alt="인스타후기사진5"></a>
+                </div>
               </div>
             </div>
             <div class="swiper instagroup2">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram6.jpg" alt="인스타후기사진6"></a></div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram7.jpg" alt="인스타후기사진7"></a></div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram8.jpg" alt="인스타후기사진8"></a></div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram9.jpg" alt="인스타후기사진9"></a></div>
-                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram10.jpg" alt="인스타후기사진10"></a></div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram6.jpg" alt="인스타후기사진6"></a>
+                </div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram7.jpg" alt="인스타후기사진7"></a>
+                </div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram8.jpg" alt="인스타후기사진8"></a>
+                </div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram9.jpg" alt="인스타후기사진9"></a>
+                </div>
+                <div class="swiper-slide"><a href="#none"><img src="./instagramimg/instagram10.jpg" alt="인스타후기사진10"></a>
+                </div>
               </div>
             </div>
             <script>
@@ -95,9 +105,25 @@
                 autoplay: {
                   delay: 0,
                   disableOnInteraction: false,
-                }, slidesPerView: 2.5,
-                centeredSlides: true,
-              });
+                }, slidesPerView: 1,
+                centeredSlides: true, 
+                slidesPerView: 1,
+                spaceBetween: 10,
+                breakpoints: {
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                  },
+                  780: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                  },
+                  1440: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 10
+                  }
+                }
+              })
             </script>
             <!-- <ul class="group1">
               <li>
