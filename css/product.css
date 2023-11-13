@@ -36,7 +36,7 @@
 
 .itemgroup button {
   border: 0;
-  background-color: rgb(218, 41, 28);
+  background-color: #da291c;
   color: white;
   font-size: 1.8rem;
   border-radius: 50%;
@@ -91,8 +91,10 @@
   flex-wrap: wrap;
 }
 
-.tap ul {
+
+.listgroup .row li {
   display: none;
+
 }
 
 .mainlist .tap {
@@ -103,7 +105,7 @@
   display: flex !important;
 }
 
-.tap.active ul li {
+.row>li {
   transition: 0.5s;
 }
 
@@ -115,7 +117,7 @@
 }
 
 .tap.active a {
-  background-color: rgb(218, 41, 28);
+  background-color: #da291c;
   color: white;
 }
 
@@ -124,6 +126,6 @@
   margin-top: -35px;
 }
 
-.tap.active .row>li:hover {
+.row>li:hover {
   transform: scale(1.2);
 }
