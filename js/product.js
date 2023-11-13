@@ -1,5 +1,7 @@
-$(".tap").click(function () {
-  $("a", this).preventDefault();
-  $(".tap").removeClass("active");
-  $(this).addClass("active");
-});
+window.addEventListener("load", function () {
+  $(".tap").click(function (e) {
+    e.preventDefault();
+    $(".tap").removeClass("active");
+    $(this).addClass("active");
+  });
+})

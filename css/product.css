@@ -1,6 +1,7 @@
 #section-item {
-  background-image: url("../instagramimg_product/product/productbackgroundimage8.jpg");
+  background-image: url("../instagramimg_product/product/background/productbackgroundimage8.jpg");
   position: relative;
+  max-width: 100%;
 }
 
 /* 검색창 */
@@ -23,25 +24,25 @@
 }
 
 .itemgroup input {
-  border: 3px solid rgb(252, 109, 158);
+  border: 3px solid rgb(218, 41, 28);
   border-radius: 3rem;
   font-size: 2rem;
   width: 600px;
   height: 70px;
   position: relative;
   left: 140px;
-  top: 40px;
+  top: 20px;
 }
 
 .itemgroup button {
   border: 0;
-  background-color: rgb(252, 109, 158);
+  background-color: rgb(218, 41, 28);
   color: white;
   font-size: 1.8rem;
   border-radius: 50%;
   padding: 0.8rem 1.3rem;
   position: relative;
-  top: 37px;
+  top: 17px;
   left: 66px;
 }
 
@@ -49,7 +50,7 @@
   position: absolute;
   color: white;
   left: 50px;
-  top: 50px;
+  top: 90px;
 }
 
 .textbox p:first-child {
@@ -70,21 +71,27 @@
   top: 150px;
 }
 
-.listgroup div {
+.listgroup div img {
   width: 200px;
   height: 200px;
   margin: 20px;
   border: 1px solid #ccc;
+  border-radius: 2rem;
   margin-left: 40px;
 }
 
-.mainlist .tap ul {
+.mainlist .tap>.row {
   position: absolute;
   top: 60px;
   left: 0;
   right: 0;
   bottom: 0;
   box-sizing: border-box;
+  display: none;
+  flex-wrap: wrap;
+}
+
+.tap ul {
   display: none;
 }
 
@@ -93,16 +100,30 @@
 }
 
 .tap.active ul {
-  display: block;
+  display: flex !important;
+}
+
+.tap.active ul li {
+  transition: 0.5s;
 }
 
 .tap>a {
   padding: 0.2rem 1rem;
   border: 1px solid #ccc;
   border-radius: 1rem;
+  color: black;
 }
 
 .tap.active a {
   background-color: rgb(218, 41, 28);
   color: white;
+}
+
+.mainlist {
+  margin-left: 50px;
+  margin-top: -35px;
+}
+
+.tap.active .row>li:hover {
+  transform: scale(1.2);
 }
