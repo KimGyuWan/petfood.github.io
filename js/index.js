@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var swiper = new Swiper('#harim.swiper', {
+    var mainswiper = new Swiper('#harim.swiper', {
         autoplay: true,
         loop: true,
         speed: 1000,
