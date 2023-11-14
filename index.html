@@ -4,198 +4,243 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>하림펫푸드</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+  <!-- 초기화 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <!-- 공통클래스, 부트스트랩 v4.6 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <!-- 플러그인 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- 스타일페이지 -->
+
+  <!-- 바닐라js -->
+  <!-- 제이쿼리 -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js"
+      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css/headerstyle.css">
+
+  <script src="./js/index.js"></script>
+
+</head>
+
+
+
+
+
+
+
+
+  <style>
+    .bgactiveColor{
+      background-color: #da291c !important;
+    }
+    .activeColor{
+      color : #da291c !important;
+    }
+    * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR';
+            line-height: 1;
+        }
+    #topbanner {
+      line-height: 2;
+    
+    }
+
+    #logo {
+      height: 400px;
+    
+    }
+
+    #gnb {
+      line-height: 4;
+      
+    }
+
+    header ul {
+     
+    }
+
+    #slide-banner {
+      height: 500px;
+      
+    }
+
+    #section-brand {
+      height: 500px;
+    
+    }
+
+    #section-item {
+      height: 500px;
+    
+    }
+
+    #section-instagram {
+      height: 500px;
+     
+    }
+
+    #form {
+      height: 400px;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    #family ul,
+    #family li {
+      border: 0;
+    }
+    #hd{
+      font-family: "Noto Sans KR", sans-serif;
+      font-weight: 300;
+    }
+  </style>
 </head>
 
 <body>
-  <!DOCTYPE html>
-  <html lang="en">
+  
+  <header id="hd" class="border-bottom fixed-top">
+    <div id="topbanner" class="bgactiveColor"><a href="">하림펫푸드 제품 첫 구매 시 간식 100원 이벤트</a></div>
+    <div class="container rel d-flex justify-content-between">
+        <h1>
+          <a href="" class="d-block"><img src="./img/뚫린건가.png" alt="" class="d-block"></a>
+        </h1>
+    
+        <ul id="gnb" class="d-flex ">
+          <li><a href="#slide-banner">EVENT</a></li>
+          <li><a href="#section-brand">하림펫푸드</a></li>
+          <li><a href="#section-item">제품</a></li>
+          <li><a href="#section-instagram">후기</a></li>
+          <li><a href="#form">체험</a></li>
+        </ul>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>하림펫푸드</title>
-    <!-- 초기화 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <!-- 공통클래스, 부트스트랩 v4.6 -->
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <!-- 플러그인 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- 스타일페이지 -->
-    <link rel="stylesheet" href="./common.css">
-    <link rel="stylesheet" href="./style.css">
-    <!-- 바닐라js -->
-    <!-- 제이쿼리 -->
-    <script src="https://code.jquery.com/jquery-2.2.4.js"
-      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/layout.css">
-  </head>
-
-  <body>
-    aaa
-    <header id="hd">
-      <div id="topbanner">하림펫푸드 제품 첫 구매 시 간식 100원 이벤트</div>
-      <div class="container">
-        <div id="logo">
-          <h1>logo하림펫푸드</h1>
+        <div id="family" >
+          <button>KOR</button>
+          <ul class="hidden abs">
+              <li><a href="#kr" class="on">KOR</a></li>
+              <li><a href="#en" class="">ENG</a></li>
+          </ul>
         </div>
-        <ul id="gnb">
-          <li><a href="#">슬라이드배너</a></li>
-          <li><a href="#">브랜드설명</a></li>
-          <li><a href="#">상품들</a></li>
-          <li><a href="#">인스타후기</a></li>
-          <li><a href="#">체험</a></li>
-        </ul>
+    </div>
+    <script>
+      
+      let familyTag = "";
+    familyTag += `
+        <button>${familyInfo.button}</button>
         <ul>
-          <li>KOR</li>
-          <li>ENG</li>
-        </ul>
-      </div>
-    </header>
+        `;
+    for (i in familyInfo.subList) {
+      const x = familyInfo.subList[i]
+      familyTag +=
+        `<li><a href= "${x.href}" class="${x.activeClass}">
+          ${x.text}</a></li>`;
+    }
 
-    <main>
-      <div class="container">
-        <section id="slide-banner">
-          <h2>EVENT</h2>슬라이드배너
-        </section>
-        <section id="section-brand">
-          <h2>우리의 약속<br>OUR COMMITMENT</h2>
-        </section>
-        <section id="section-item">
-          <h2>상품들</h2>
-        </section>
-        <section id="section-instagram">
-          <h2>INSTAGRAM후기</h2>
-        </section>
-        <section id="form" class="sec">
-          <form action="">
-            <fieldset>
-              <legend>맞춤영양 무료 체험 프로그램</legend>
-              <div class="inner d-flex justifycontent-spacebetween">
-                <p>잘먹을까? 잘맞을까? 고민이시라면? <br> 무료 체험 사료로 시작해보세요</p>
-                <div class="form_interest postion-rel">
-                  <ul class="list_wrap d-flex">
-                    <li class="item">
-                      <div class="input_box postion-abs">
-                        <label for="nane">이름</label>
-                        <input type="text" name="name" id="name">
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="input_box">
-                        <label for="pet_name">반려동물 이름</label>
-                        <input type="text" name="pet_name" id="pet_name">
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="input_box">
-                        <label for="tel">연락처</label>
-                        <input type="text" name="tel" id="tel">
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="input_box">
-                        <label for="address">주소</label>
-                        <input type="text" name="address" id="address">
-                      </div>
-                    </li>
+    familyTag += `</ul>`;
 
-                    <li class="item2 postion-abs">
-                      <div class="pet">
-                        <P>반려동물</P>
-                        <label for="">강아지</label>
-                        <input type="radio" name="" id="">
-                        <label for="">고양이</label>
-                        <input type="radio" name="" id="">
-                      </div>
-                    </li>
+    document.getElementById("family").innerHTML = familyTag;
 
+    /////////////////데이터를 가져와서 태그 완성하기 -> 동적개체/////////////////
+  </script>
+  <script>
+    $(function () { // html 페이지 안에 작성한 상태이고, 외부 페이지로 작성한 것이 아니기 때문에 생략해도 괜찮다.
+      $("#family button").click(function () {
+        $("#family").toggleClass("show");
+      })
+    })
 
-                    <li class="item">
-                      <p>연령</p>
-                      <ul class="check_box">
-                        <li class="item">
-                          <input type="radio" name="interest_arr" value="이유기" id="interest1">
-                          <label for="interest1" class="req"><span>이유기</span></label>
-                        </li>
-                        <li class="item">
-                          <input type="radio" name="interest_arr" value="성장기" id="interest2">
-                          <label for="interest2" class="req"><span>성장기</span></label>
-                        </li>
-                        <li class="item">
-                          <input type="radio" name="interest_arr" value="성년기" id="interest3">
-                          <label for="interest3" class="req"><span>성년기</span></label>
-                        </li>
-                        <li class="item">
-                          <input type="radio" name="interest_arr" value="노년기" id="interest3">
-                          <label for="interest3" class="req"><span>노년기</span></label>
-                        </li>
-                        <p>유형</p>
-                        <li>
-                          <input type="radio" name="interest_arr" value="노년기" id="interest3">
-                          <label for="interest3" class="req"><span>건식</span></label>
-                        </li>
-                        <li>
-                          <input type="radio" name="interest_arr" value="노년기" id="interest3">
-                          <label for="interest3" class="req"><span>냉동</span></label>
-                        </li>
+    let lengtext = "";
 
-                      </ul>
-                    </li>
-                  </ul>
-                  <button type="submit" class="btn">전송</button>
+    $("#family a").click(function (e) {
+      // 여기서 e는 click을 의미합니다.
+      e.preventDefault(); // 태그가 가지고 있는 고유 기능을 제한시키는 함수
+      lengtext = $(this).html();
+      // $(this) : function을 실행시킨 객체를 의미
+      // html() : 비어있다면 태그객체 가져와
+      $("#family button").html(lengtext);
+      // html(lengtext) : lengtext를 넣어서 출력
+      $("#family").removeClass("show");
+    })
 
-                </div>
-            </fieldset>
-          </form>
-        </section>
-      </div>
-    </main>
+    $("#logo").attr({ "src": "naver.jpg", "alt": "logo" });
+    </script>
+  </header>
 
-    <footer>
-      <div class="container">
-        <ul>company info
-          <li>㈜ 하림펫푸드</li>
-          <li>대표 : 민동기</li>
-          <li>충청남도 공주시 정안면 정안농공단지길 32-111</li>
-          <li>사업자 등록 번호 : 240-81-00698</li>
-          <li>통신판매업 신고 제 2017-충남공주-0042호</li>
-          <li>개인정보관리책임자 : 조준형</li>
-          <li>FAX : 02-6933-4402</li>
-        </ul>
-        <ul>customer center
-          <li>080-850-0085</li>
-          <li>Open : AM 09:00 ~ PM 05:00</li>
-          <li>Lunch : PM 12:00 ~ PM 01:00</li>
-          <li>토,일,공휴일 휴무</li>
-        </ul>
-        <ul>website info
-          <li><a href="#">우리의 이야기</a></li>
-          <li><a href="#">이용약관</a></li>
-          <li><a href="#">개인정보처리방침</a></li>
-          <li><a href="#">사업자정보확인</a></li>
-        </ul>
-        <ul>family site
-          <li>(주)하림</li>
-          <li>하림몰</li>
-          <li>선진</li>
-          <li>팜스코</li>
-          <li>주원산오리</li>
-          <li>NS홈쇼핑</li>
-          <li>멕시칸치킨</li>
-          <li>디디치킨</li>
-        </ul>
-        <ul>
-          <li>페이스북</li>
-          <li>블로그</li>
-          <li>인스타그램</li>
-        </ul>
-      </div>
-    </footer>
+  <main class="">
+    <div class="container">
+      <section id="slide-banner">
+        <h2>EVENT</h2>슬라이드배너
+      </section>
+      <section id="section-brand">
+        <h2>우리의 약속<br>OUR COMMITMENT</h2>
+      </section>
+      <section id="section-item">
+        <h2>상품들</h2>
+      </section>
+      <section id="section-instagram">
+        <h2>INSTAGRAM후기</h2>
+      </section>
+      <section id="form">
+        <h2>체험기획</h2>
+      </section>
+    </div>
+  </main>
 
-  </body>
+  <footer class="">
+    <div class="container">
+      <ul>company info
+        <li>㈜ 하림펫푸드</li>
+        <li>대표 : 민동기</li>
+        <li>충청남도 공주시 정안면 정안농공단지길 32-111</li>
+        <li>사업자 등록 번호 : 240-81-00698</li>
+        <li>통신판매업 신고 제 2017-충남공주-0042호</li>
+        <li>개인정보관리책임자 : 조준형</li>
+        <li>FAX : 02-6933-4402</li>
+      </ul>
+      <ul>customer center
+        <li>080-850-0085</li>
+        <li>Open : AM 09:00 ~ PM 05:00</li>
+        <li>Lunch : PM 12:00 ~ PM 01:00</li>
+        <li>토,일,공휴일 휴무</li>
+      </ul>
+      <ul>website info
+        <li><a href="#">우리의 이야기</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">사업자정보확인</a></li>
+      </ul>
+      <ul>family site
+        <li>(주)하림</li>
+        <li>하림몰</li>
+        <li>선진</li>
+        <li>팜스코</li>
+        <li>주원산오리</li>
+        <li>NS홈쇼핑</li>
+        <li>멕시칸치킨</li>
+        <li>디디치킨</li>
+      </ul>
+      <ul>
+        <li>페이스북</li>
+        <li>블로그</li>
+        <li>인스타그램</li>
+      </ul>
+    </div>
+  </footer>
+  <div id="popup" class="position-fixed bgactiveColor">
+    <a href=""><i class="bi bi-arrow-up"></i></a>
+  </div>
+</body>
 
-  </html>
+</html>
