@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('#section-instagram .swiper', {
     direction: 'vertical',
     speed: 10000,
     loop: true,

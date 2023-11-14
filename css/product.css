@@ -6,11 +6,11 @@
 
 /* 검색창 */
 
-.inputbutton {
+#section-item .inputbutton {
   position: relative;
 }
 
-.itemgroup {
+#section-item .itemgroup {
   width: 900px;
   height: 700px;
   background-color: white;
@@ -19,11 +19,11 @@
   border: 1px solid #ccc;
 }
 
-.itemgroup input:focus {
+#section-item .itemgroup input:focus {
   outline: none;
 }
 
-.itemgroup input {
+#section-item .itemgroup input {
   border: 3px solid rgb(218, 41, 28);
   border-radius: 3rem;
   font-size: 2rem;
@@ -34,7 +34,7 @@
   top: 20px;
 }
 
-.itemgroup button {
+#section-item .itemgroup button {
   border: 0;
   background-color: #da291c;
   color: white;
@@ -46,24 +46,24 @@
   left: 66px;
 }
 
-.textbox {
+#section-item .textbox {
   position: absolute;
   color: white;
   left: 50px;
   top: 90px;
 }
 
-.textbox p:first-child {
+#section-item .textbox p:first-child {
   font-size: 2.5rem;
 }
 
-.textbox p:last-child {
+#section-item .textbox p:last-child {
   font-size: 1.5rem;
 }
 
 /* 상품항목 */
 
-.listgroup {
+#section-item .listgroup {
   position: absolute;
   left: 0;
   right: 0;
@@ -71,7 +71,7 @@
   top: 150px;
 }
 
-.listgroup div img {
+#section-item .listgroup div img {
   width: 200px;
   height: 200px;
   margin: 20px;
@@ -80,7 +80,7 @@
   margin-left: 40px;
 }
 
-.mainlist .tap>.row {
+#section-item .mainlist .tap>.row {
   position: absolute;
   top: 60px;
   left: 0;
@@ -92,40 +92,40 @@
 }
 
 
-.listgroup .row li {
+#section-item .listgroup .row li {
   display: none;
 
 }
 
-.mainlist .tap {
+#section-item .mainlist .tap {
   display: inline-flex;
 }
 
-.tap.active ul {
+#section-item .tap.active ul {
   display: flex !important;
 }
 
-.row>li {
+#section-item .row>li {
   transition: 0.5s;
 }
 
-.tap>a {
+#section-item .tap>a {
   padding: 0.2rem 1rem;
   border: 1px solid #ccc;
   border-radius: 1rem;
   color: black;
 }
 
-.tap.active a {
+#section-item .tap.active a {
   background-color: #da291c;
   color: white;
 }
 
-.mainlist {
+#section-item .mainlist {
   margin-left: 50px;
   margin-top: -35px;
 }
 
-.row>li:hover {
+#section-item .row>li:hover {
   transform: scale(1.2);
 }

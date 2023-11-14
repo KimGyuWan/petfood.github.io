@@ -1,0 +1,48 @@
+#popupWindow {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+  z-index: 100000;
+}
+
+#popupWindow .close {
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  background-color: black;
+  opacity: 1;
+}
+
+#popupWindow .closeBtn {
+  position: absolute;
+  height: auto;
+  margin-left: unset;
+  right: 0;
+  bottom: 0;
+  color: white;
+}
+
+.close:not(:disabled):not(.disabled):hover {
+  opacity: 1;
+}
+
+.popupdiv::before {
+  content: "";
+  position: fixed;
+  background-color: rgb(0, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.popupdiv #popupWindow {
+  display: block;
+}
+
+#popupWindow .content {
+  width: 200px;
+  height: 200px;
+}
