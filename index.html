@@ -54,24 +54,10 @@
             font-family: 'Noto Sans KR';
             line-height: 1;
         }
-    #topbanner {
-      line-height: 2;
+
+
+
     
-    }
-
-    #logo {
-      height: 400px;
-    
-    }
-
-    #gnb {
-      line-height: 4;
-      
-    }
-
-    header ul {
-     
-    }
 
     #slide-banner {
       height: 500px;
@@ -109,32 +95,32 @@
   </style>
 </head>
 
-<body>
+<body id="pagetop">
   
   <header id="hd" class="border-bottom fixed-top bg-white">
-    <div id="topbanner" class="bgactiveColor"><a href="">하림펫푸드 제품 첫 구매 시 간식 100원 이벤트</a></div>
-    <div class="container rel d-flex justify-content-between">
-        <h1>
+    <div id="topbanner" class="bgactiveColor text-center p-1"><a href="" class="text-white">하림펫푸드 제품 첫 구매 시 간식 100원 이벤트</a></div>
+    <div class="container rel d-flex justify-content-between align-items-center py-2">
+        <h1 class="mb-0">
           <a href="" class="d-block"><img src="./headerimg/harim.png" alt="" class="d-block"></a>
         </h1>
     
-        <ul id="gnb" class="d-flex">
-          <li><a href="#slide-banner">EVENT</a></li>
-          <li><a href="#section-brand">하림펫푸드</a></li>
-          <li><a href="#section-item">제품</a></li>
-          <li><a href="#section-instagram">후기</a></li>
-          <li><a href="#form">체험</a></li>
+        <ul id="gnb" class="d-flex mb-0">
+          <li class="px-3"><a href="#slide-banner" class="text-dark  position-relative">EVENT</a></li>
+          <li class="px-3"><a href="#section-brand" class="text-dark  position-relative">하림펫푸드</a></li>
+          <li class="px-3"><a href="#section-item" class="text-dark  position-relative">제품</a></li>
+          <li class="px-3"><a href="#section-instagram" class="text-dark   position-relative">후기</a></li>
+          <li class="px-3"><a href="#form" class="text-dark   position-relative">체험</a></li>
         </ul>
 
-        <div id="family" >
-          <button>KOR</button>
-          <ul class="hidden abs">
+        <div id="family" class="rel" >
+          <button class="bg-transparent border-0">KOR</button>
+          <ul class="hidden abs d-none mb-0">
               <li><a href="#kr" class="on">KOR</a></li>
               <li><a href="#en" class="">ENG</a></li>
           </ul>
         </div>
     </div>
-    <script>
+    <!-- <script>
       
       let familyTag = "";
     familyTag += `
@@ -175,7 +161,7 @@
     })
 
     $("#logo").attr({ "src": "naver.jpg", "alt": "logo" });
-    </script>
+    </script> -->
   </header>
 
   <main class="pt-5">
@@ -239,7 +225,7 @@
     </div>
   </footer>
   <div id="popup" class="position-fixed bgactiveColor">
-    <a href=""><i class="bi bi-arrow-up"></i></a>
+    <a href="#pagetop"><i class="bi bi-arrow-up"></i></a>
   </div>
 </body>
 

@@ -1,91 +1,43 @@
+#hd a{
+    text-decoration: none;
+}
 #topbanner{
-    text-align: center;
-    background-color: red;
-    text-decoration: none;
-  }
-  #topbanner a{
-    color: white;
-    transition: .5s;
-    
-  }
-  #topbanner h1{
-    padding: 0;
-  }
-  #logo .img2 img{
-    bottom: 0;
-  }
-  #gnb{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8px;
-    height: 40px;
-  }
-  
-  #gnb a{
-    margin: 0 1rem ;
-    font-size: 2rem;
-    color: black;
-    text-decoration: white;
-    transition: 0.5s;
-    
-  }
-  #gnb a:hover{
-    text-decoration:underline red;
-  }
-  
-  .lang{
-    font-size: 20px;
-    right: 5rem;
-    bottom: 8px;
-  }
-  #family ul {
-    font-size: 1.2rem;
-    line-height: 2;
-    border-top: 0;
-    position: absolute;
-    box-sizing: border-box;
-    padding-left: 20px;
-    top: 100%;
-    left: 0; right: 0;
-    z-index: 10000;
-    display: none;
-  }
-  #family ul a{
-    text-decoration: none;
-  }
-    
-  #family.show ul {
+ transition: .5s;   
+ font-size: 0.85em; 
+}
+
+
+#gnb{
+
+}
+#gnb a{  
+ transition: 0.5s;
+ font-size: 1.2em;
+ font-weight: 400;
+}
+
+#gnb  a:after{
+    content: "";
     display: block;
-  }
-  #family {
-    border: none;
-    bottom: 0;
-    right: 0;
-    transform: translate(0 ,10%);
-        
-  }
-  
-  #family button {
-    font-size: 2rem;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    padding: 0 3rem;
-  }
-  #family li{
-    text-align: center;
-    font-size: 30px;
-    margin-right: 18px;
-  }
-  #family a{
-    color: black;
-  }
-  
-  #hd h1 {
-    position: relative;
-    top: 7px;
-  }
+    position: absolute;
+    left:0; right:0;
+    width:0;
+    margin: auto;
+    height: 2px;
+    background-color: #da291c;
+    transition: 0.5s;
+}
+#gnb  a:hover:after,
+#gnb  a.on:after{
+    width:100%;
+}
+#gnb  a:hover,
+#gnb  a.on{
+    color:#da291c !important
+}
+    
+
+ 
   #popup{
     width: 50px;
     height: 50px;

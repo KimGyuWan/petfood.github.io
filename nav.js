@@ -28,4 +28,15 @@ var familyInfo = {
   // for (x in familyInfo.subList) {
   //   console.log(familyInfo.subList[x].text);
   // }
+
+  $(function(){
+    $("#gnb a, #popup a").click(function(e){
+        e.preventDefault();
+        var targetSection = $(this).attr("href");
+        $("body, html").animate({ scrollTop : $(targetSection).offset().top })
+        $("#gnb a").removeClass('on')
+        $(this).addClass('on')
+
+    })
+  })
   
