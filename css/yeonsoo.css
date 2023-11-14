@@ -93,7 +93,7 @@ body * {
   transform: translate(-50%, 0);
   margin-top: 10px;
   z-index: 100;
-  color: #e40118;
+  color: #da291c;
   padding: 1rem;
 }
 
@@ -148,7 +148,7 @@ body * {
 #slide-banner .swiper-button-next::after {
   padding: 1rem;
   font-size: 4rem;
-  color: #e40118;
+  color: #da291c;
   font-weight: 400;
 }
 
@@ -156,12 +156,12 @@ body * {
   width: 1rem;
   height: 1rem;
   background-color: rgba(225, 225, 225, 0.5);
-  border: 2px solid #e40118;
+  border: 2px solid #da291c;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #e40118;
+  background-color: #da291c;
   width: 3rem;
   border-radius: 3rem;
 }
@@ -213,7 +213,7 @@ body * {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #e40118;
+  background-color: #da291c;
   padding: 0 5rem;
   height: 200px;
 
@@ -228,7 +228,7 @@ body * {
 #line-banner .container button {
   position: relative;
   background-color: #fff;
-  color: #e40118;
+  color: #da291c;
   height: 3rem;
   width: 3rem;
   border-radius: 100%;
@@ -255,7 +255,7 @@ body * {
 #line-banner .container ul li {
   position: relative;
   background-color: #fff;
-  color: #e40118;
+  color: #da291c;
   font-size: 3rem;
   width: 7rem;
   height: 7rem;
@@ -289,7 +289,7 @@ body * {
 
 #ft .icon>.container {
   padding: 1rem 0;
-  background-color: #e40118;
+  background-color: #da291c;
 }
 
 #ft .info {
@@ -318,7 +318,7 @@ body * {
   right: 0;
   width: 50%;
   z-index: 1000;
-  border-bottom: 1px solid #e40118;
+  border-bottom: 1px solid #da291c;
   position: absolute;
   transform: translate(0, -100%);
 }
@@ -358,7 +358,7 @@ body * {
 
 #ft .family:hover ul {
   max-height: 800px;
-  box-shadow: 2px 2px 10px 2px #e40118;
+  box-shadow: 2px 2px 10px 2px #da291c;
 }
 
 #ft .website li {
@@ -369,7 +369,7 @@ body * {
   margin-left: 0.5rem;
   font-weight: 500;
   padding: 0.5rem;
-  border: 1px solid #e40118;
+  border: 1px solid #da291c;
   box-sizing: border-box;
   display: block;
   transition: 0.5s;
@@ -381,7 +381,7 @@ body * {
 }
 
 #ft .website li a:hover {
-  background-color: #e40118;
+  background-color: #da291c;
   color: #fff;
 }
 
