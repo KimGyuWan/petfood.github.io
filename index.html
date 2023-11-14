@@ -30,13 +30,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet">
     <!-- 스타일페이지 -->
-    <link rel="stylesheet" href="./common.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/layout.css">
     <!-- 바닐라js -->
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-2.2.4.js"
       integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/layout.css">
+    <script src="./js/index.js"></script>
   </head>
 
   <body>
@@ -118,8 +117,10 @@
                 </a>
               </div>
             </div>
-
-            <div class="swiper-pagination"></div>
+            <div class="btns">
+              <div class="swiper-pagination"></div>
+              <button class="toggle"></button>
+            </div>
 
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
@@ -127,12 +128,20 @@
         </section>
         <section id="line-banner">
           <div class="container">
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+            <h2>GOLD MEMBER<br />골드멤버8가지혜택</h2>
+            <button><i class="bi bi-plus"></i></button>
+            <div class="member">
+              <ul>
+                <li><i class="bi bi-balloon-heart" class="ir-hidden"></i></li>
+                <li><i class="bi bi-gift"></i></li>
+                <li><i class="bi bi-box2-heart"></i></li>
+                <li><i class="bi bi-ticket-perforated"></i></li>
+                <li><i class="bi bi-truck"></i></li>
+                <li><i class="bi bi-envelope-check"></i></li>
+                <li><i class="bi bi-cash-coin"></i></li>
+                <li><i class="bi bi-headset"></i></li>
+              </ul>
+            </div>
           </div>
         </section>
         <section id="section-brand">
@@ -291,23 +300,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      var swiper7mall = new Swiper('#harim.swiper', {
-        autoplay: true,
-        loop: true,
-        speed: 1000,
-
-        pagination: {
-          el: '#harim .swiper-pagination',
-        },
-
-        navigation: {
-          nextEl: '#harim .swiper-button-next',
-          prevEl: '#harim .swiper-button-prev',
-        },
-
-      });
-    </script>
   </body>
 
   </html>
