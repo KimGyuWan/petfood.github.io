@@ -60,8 +60,10 @@
     right: 0;
   }
   #family button{
+    width: 0;
     border: 0;
     background-color: transparent;
+    padding: 5px 0;
   }
 #family.show ul{
   display: block;
@@ -69,5 +71,12 @@
 }
 #family a{
   color: black;
+  line-height: 25px;
   
+}
+#family{
+  width: 0;
+}
+#topbanner a{
+  width: 0;
 }
