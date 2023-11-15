@@ -65,12 +65,17 @@ header ul {
 
 #form {
     height: 400px;
-    background: url(../image/form.jpg);
+    background: url(../image/form0.jpg);
     background-size: cover;
     color: white;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
 
+}
+
+#form input:focus {
+
+    outline: none;
 }
 
 #formBox label {
@@ -198,15 +203,30 @@ span {
 }
 
 /* brand */
+#section-brand {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#section-brand img {
+    transform: translateX(100px);
+}
+
 #section-brand h1 {
-    color: tomato;
+    color: black;
     text-align: center;
+
 }
 
 #section-brand h2 {
+
     text-align: center;
     color: red;
     margin-bottom: 20px;
+
+}
+
+#section-brand .sh {
+    margin: 20px;
 }
 
 #section-brand .dp {
@@ -217,4 +237,26 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#section-brand #mainSwiper .swiper-slide .sh {
+
+
+
+    font-size: 24px;
+    transform: translateY(50%);
+    transition: 0.5s;
+    opacity: 0;
+
+}
+
+#section-brand #mainSwiper .swiper-slide-active .sh {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+#section-brand .swiper-button-prev,
+#section-brand .swiper-button-next {
+    top: 40%;
+    color: black;
 }
