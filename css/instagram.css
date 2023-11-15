@@ -41,3 +41,13 @@
   left: 50px;
 }
 
+@media (max-width: 991px) {
+  .instagroup2.hidden {
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}

@@ -23,24 +23,24 @@
   <link rel="stylesheet" href="./css/instagram.css">
   <link rel="stylesheet" href="./css/product.css">
   <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/popup.css">
+  <!-- <link rel="stylesheet" href="./css/popup.css"> -->
   <!-- 바닐라js -->
   <!-- 제이쿼리 -->
   <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
     crossorigin="anonymous"></script>
-  <script src="./js/instagram.js"></script>
+  <!-- <script src="./js/popup.js"></script> -->
   <script src="./js/product.js"></script>
-  <script src="./js/popup.js"></script>
+  <script src="./js/instagram.js"></script>
 </head>
 
 <body class="popupdiv">
 
-  <div id="popupWindow" class="bg-white border position-fixed m-auto">
+  <!-- <div id="popupWindow" class="bg-white border position-fixed m-auto">
     <div class="content"><img src="./" alt=""></div>
     <div class="close">
       <button class="closeBtn bg-transparent"><i class="bi bi-x-lg"></i></button>
     </div>
-  </div>
+  </div> -->
 
   <header id="hd">
     <div id="topbanner">하림펫푸드 제품 첫 구매 시 간식 100원 이벤트</div>
@@ -63,255 +63,262 @@
   </header>
 
   <main>
-    <div class="container">
-      <section id="slide-banner">
-        <h2>EVENT</h2>슬라이드배너
-      </section>
-      <section id="section-brand">
-        <h2>우리의 약속<br>OUR COMMITMENT</h2>
-      </section>
-      <section id="section-item">
-        <h2>상품들</h2>
-        <div class="textbox">
-          <p>알맞은 제품을 찾고 계세요?</p>
-          <p>핫 키워드 제품을 찾아보세요!!</p>
-        </div>
-        <div class="itemgroup">
+
+    <section id="slide-banner" class="container">
+      <h2>EVENT</h2>슬라이드배너
+    </section>
+    <section id="section-brand" class="container">
+      <h2>우리의 약속<br>OUR COMMITMENT</h2>
+    </section>
+    <section id="section-item" class="w-100">
+      <div id="itemPeel" class="container  d-flex justify-content-center align-items-center">
+        <div class="text">
+          <div class="textbox">
+            <h2>알맞은 제품을 찾고 계세요?</h2>
+          </div>
+
           <div class="inputbutton">
-            <input type="text" placeholder="검색키워드를 입력해주세요.">
+            <input type="text" placeholder="핫 키워드 제품을 찾아보세요!!">
             <button><i class="bi bi-search-heart"></i></button>
           </div>
+
+          <ul class="mainlist">
+            <li class="tap active"><a href=".no0">#우리 아이들도 100세까지</a></li>
+            <li class="tap"><a href=".no1">#간식 / 영양제</a></li>
+            <li class="tap"><a href=".no2">#휴먼그레이드 PICK</a></li>
+            <li class="tap"><a href=".no3">#가장 맛있는 시간 30일</a></li>
+            <li class="tap"><a href=".no4">#하림펫푸드 PICK ITEM</a></li>
+          </ul>
+        </div>
+
+        <div class="itemgroup">
+
           <div class="listgroup">
-            <ul class="mainlist">
-              <li class="tap active"><a href=".no0">#우리 아이들도 100세까지</a></li>
-              <li class="tap"><a href=".no1">#간식 / 영양제</a></li>
-              <li class="tap"><a href=".no2">#휴먼그레이드 PICK</a></li>
-              <li class="tap"><a href=".no3">#가장 맛있는 시간 30일</a></li>
-              <li class="tap"><a href=".no4">하림펫푸드 PICK ITEM</a></li>
-            </ul>
-            <ul class="row" data-number="">
-              <li class="col-4 no0"><a href="#none">
+
+            <ul class="row mx-0" data-number="">
+              <li class="col-6 no0"><a href="#none">
                   <div><img src="./instagramimg_product/product/li1/list1_1.jpg" alt="list1_1"></div>
                 </a></li>
-              <li class="col-4 no0"><a href="#none">
+              <li class="col-6 no0"><a href="#none">
                   <div><img src="./instagramimg_product/product/li1/list1_2.jpg" alt="list1_2"></div>
                 </a></li>
-              <li class="col-4 no0"><a href="#none">
+              <li class="col-6 no0"><a href="#none">
                   <div><img src="./instagramimg_product/product/li1/list1_3.jpg" alt="list1_3"></div>
                 </a></li>
-              <li class="col-4 no0"><a href="#none">
+              <li class="col-6 no0"><a href="#none">
                   <div><img src="./instagramimg_product/product/li1/list1_4.jpg" alt="list1_4"></div>
                 </a></li>
-              <li class="col-4 no0"><a href="#none">
+              <li class="col-6 no0"><a href="#none">
                   <div><img src="./instagramimg_product/product/li1/list1_5.jpg" alt="list1_5"></div>
                 </a></li>
-              <li class="col-4 no0"><a href="#none">
+              <li class="col-6 no0"><a href="#none">
                   <div><img src="./instagramimg_product/product/li1/list1_6.jpg" alt="list1_6"></div>
                 </a></li>
-              <li class="col-4 no1"><a href="#none">
+              <li class="col-6 no1"><a href="#none">
                   <div><img src="./instagramimg_product/product/li2/list2_1.jpg" alt="list2_1"></div>
                 </a></li>
-              <li class="col-4 no1"><a href="#none">
+              <li class="col-6 no1"><a href="#none">
                   <div><img src="./instagramimg_product/product/li2/list2_2.jpg" alt="list2_2"></div>
                 </a></li>
-              <li class="col-4 no1"><a href="#none">
+              <li class="col-6 no1"><a href="#none">
                   <div><img src="./instagramimg_product/product/li2/list2_3.png" alt="list2_3"></div>
                 </a></li>
-              <li class="col-4 no1"><a href="#none">
+              <li class="col-6 no1"><a href="#none">
                   <div><img src="./instagramimg_product/product/li2/list2_4.jpg" alt="list2_4"></div>
                 </a></li>
-              <li class="col-4 no1"><a href="#none">
+              <li class="col-6 no1"><a href="#none">
                   <div><img src="./instagramimg_product/product/li2/list2_5.jpg" alt="list2_5"></div>
                 </a></li>
-              <li class="col-4 no1"><a href="#none">
+              <li class="col-6 no1"><a href="#none">
                   <div><img src="./instagramimg_product/product/li2/list2_6.jpg" alt="list2_6"></div>
                 </a></li>
-              <li class="col-4 no2"><a href="#none">
+              <li class="col-6 no2"><a href="#none">
                   <div><img src="./instagramimg_product/product/li3/list3_1.jpg" alt="list3_1"></div>
                 </a></li>
-              <li class="col-4 no2"><a href="#none">
+              <li class="col-6 no2"><a href="#none">
                   <div><img src="./instagramimg_product/product/li3/list3_2.jpg" alt="list3_2"></div>
                 </a></li>
-              <li class="col-4 no2"><a href="#none">
+              <li class="col-6 no2"><a href="#none">
                   <div><img src="./instagramimg_product/product/li3/list3_3.jpg" alt="list3_3"></div>
                 </a></li>
-              <li class="col-4 no2"><a href="#none">
+              <li class="col-6 no2"><a href="#none">
                   <div><img src="./instagramimg_product/product/li3/list3_4.jpg" alt="list3_4"></div>
                 </a></li>
-              <li class="col-4 no2"><a href="#none">
+              <li class="col-6 no2"><a href="#none">
                   <div><img src="./instagramimg_product/product/li3/list3_5.jpg" alt="list3_5"></div>
                 </a></li>
-              <li class="col-4 no2"><a href="#none">
+              <li class="col-6 no2"><a href="#none">
                   <div><img src="./instagramimg_product/product/li3/list3_6.jpg" alt="list3_6"></div>
                 </a></li>
-              <li class="col-4 no3"><a href="#none">
+              <li class="col-6 no3"><a href="#none">
                   <div><img src="./instagramimg_product/product/li4/list4_1.jpg" alt="list4_1"></div>
                 </a></li>
-              <li class="col-4 no3"><a href="#none">
+              <li class="col-6 no3"><a href="#none">
                   <div><img src="./instagramimg_product/product/li4/list4_2.jpg" alt="list4_2"></div>
                 </a></li>
-              <li class="col-4 no3"><a href="#none">
+              <li class="col-6 no3"><a href="#none">
                   <div><img src="./instagramimg_product/product/li4/list4_3.jpg" alt="list4_3"></div>
                 </a></li>
-              <li class="col-4 no3"><a href="#none">
+              <li class="col-6 no3"><a href="#none">
                   <div><img src="./instagramimg_product/product/li4/list4_4.jpg" alt="list4_4"></div>
                 </a></li>
-              <li class="col-4 no3"><a href="#none">
+              <li class="col-6 no3"><a href="#none">
                   <div><img src="./instagramimg_product/product/li4/list4_5.jpg" alt="list4_5"></div>
                 </a></li>
-              <li class="col-4 no3"><a href="#none">
+              <li class="col-6 no3"><a href="#none">
                   <div><img src="./instagramimg_product/product/li4/list4_6.jpg" alt="list4_6"></div>
                 </a></li>
-              <li class="col-4 no4"><a href="#none">
+              <li class="col-6 no4"><a href="#none">
                   <div><img src="./instagramimg_product/product/li5/list5_1.jpg" alt="list5_1"></div>
                 </a></li>
-              <li class="col-4 no4"><a href="#none">
+              <li class="col-6 no4"><a href="#none">
                   <div><img src="./instagramimg_product/product/li5/list5_2.png" alt="list5_2"></div>
                 </a></li>
-              <li class="col-4 no4"><a href="#none">
+              <li class="col-6 no4"><a href="#none">
                   <div><img src="./instagramimg_product/product/li5/list5_3.jpg" alt="list5_3"></div>
                 </a></li>
-              <li class="col-4 no4"><a href="#none">
+              <li class="col-6 no4"><a href="#none">
                   <div><img src="./instagramimg_product/product/li5/list5_4.jpg" alt="list5_4"></div>
                 </a></li>
-              <li class="col-4 no4"><a href="#none">
+              <li class="col-6 no4"><a href="#none">
                   <div><img src="./instagramimg_product/product/li5/list5_5.jpg" alt="list5_5"></div>
                 </a></li>
-              <li class="col-4 no4"><a href="#none">
+              <li class="col-6 no4"><a href="#none">
                   <div><img src="./instagramimg_product/product/li5/list5_6.jpg" alt="list5_6"></div>
                 </a></li>
             </ul>
           </div>
         </div>
-      </section>
-      <section id="section-instagram">
-        <h2>INSTAGRAM후기</h2>
-        <div class="istagramMain"><img src="./instagramimg_product/instagram/instagramMain.png" alt=""></div>
-        <div class="d-flex insta">
-          <div class="swiper instagroup1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram1.jpg"
-                    alt="인스타후기사진1"></a>
-              </div>
-              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram2.jpg"
-                    alt="인스타후기사진2"></a>
-              </div>
-              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram3.jpg"
-                    alt="인스타후기사진3"></a>
-              </div>
-              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram4.jpg"
-                    alt="인스타후기사진4"></a>
-              </div>
-              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram5.jpg"
-                    alt="인스타후기사진5"></a>
-              </div>
+      </div>
+    </section>
+    <section id="section-instagram" class="container">
+      <h2>INSTAGRAM후기</h2>
+      <div class="istagramMain"><img src="./instagramimg_product/instagram/instagramMain.png" alt=""></div>
+      <div class="d-flex insta">
+        <div class="swiper instagroup1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram1.jpg"
+                  alt="인스타후기사진1"></a>
             </div>
-          </div>
-          <div class="swiper instagroup2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram6.jpg"
-                    alt="인스타후기사진6"></a>
-              </div>
-              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram7.jpg"
-                    alt="인스타후기사진7"></a>
-              </div>
-              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram8.jpg"
-                    alt="인스타후기사진8"></a>
-              </div>
-              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram9.jpg"
-                    alt="인스타후기사진9"></a>
-              </div>
-              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram10.jpg"
-                    alt="인스타후기사진10"></a>
-              </div>
+            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram2.jpg"
+                  alt="인스타후기사진2"></a>
+            </div>
+            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram3.jpg"
+                  alt="인스타후기사진3"></a>
+            </div>
+            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram4.jpg"
+                  alt="인스타후기사진4"></a>
+            </div>
+            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram5.jpg"
+                  alt="인스타후기사진5"></a>
             </div>
           </div>
         </div>
+        <div class="swiper instagroup2 hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram6.jpg"
+                  alt="인스타후기사진6"></a>
+            </div>
+            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram7.jpg"
+                  alt="인스타후기사진7"></a>
+            </div>
+            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram8.jpg"
+                  alt="인스타후기사진8"></a>
+            </div>
+            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram9.jpg"
+                  alt="인스타후기사진9"></a>
+            </div>
+            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram10.jpg"
+                  alt="인스타후기사진10"></a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      </section>
-      <section id="form" class="sec">
-        <form action="">
-          <fieldset>
-            <legend>맞춤영양 무료 체험 프로그램</legend>
-            <div class="inner d-flex justifycontent-spacebetween">
-              <p>잘먹을까? 잘맞을까? 고민이시라면? <br> 무료 체험 사료로 시작해보세요</p>
-              <div class="form_interest postion-rel">
-                <ul class="list_wrap d-flex">
-                  <li class="item">
-                    <div class="input_box postion-abs">
-                      <label for="nane">이름</label>
-                      <input type="text" name="name" id="name">
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div class="input_box">
-                      <label for="pet_name">반려동물 이름</label>
-                      <input type="text" name="pet_name" id="pet_name">
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div class="input_box">
-                      <label for="tel">연락처</label>
-                      <input type="text" name="tel" id="tel">
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div class="input_box">
-                      <label for="address">주소</label>
-                      <input type="text" name="address" id="address">
-                    </div>
-                  </li>
+    </section>
+    <section id="form" class="sec container">
+      <form action="">
+        <fieldset>
+          <legend>맞춤영양 무료 체험 프로그램</legend>
+          <div class="inner d-flex justifycontent-spacebetween">
+            <p>잘먹을까? 잘맞을까? 고민이시라면? <br> 무료 체험 사료로 시작해보세요</p>
+            <div class="form_interest postion-rel">
+              <ul class="list_wrap d-flex">
+                <li class="item">
+                  <div class="input_box postion-abs">
+                    <label for="nane">이름</label>
+                    <input type="text" name="name" id="name">
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="input_box">
+                    <label for="pet_name">반려동물 이름</label>
+                    <input type="text" name="pet_name" id="pet_name">
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="input_box">
+                    <label for="tel">연락처</label>
+                    <input type="text" name="tel" id="tel">
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="input_box">
+                    <label for="address">주소</label>
+                    <input type="text" name="address" id="address">
+                  </div>
+                </li>
 
-                  <li class="item2 postion-abs">
-                    <div class="pet">
-                      <P>반려동물</P>
-                      <label for="">강아지</label>
-                      <input type="radio" name="" id="">
-                      <label for="">고양이</label>
-                      <input type="radio" name="" id="">
-                    </div>
-                  </li>
+                <li class="item2 postion-abs">
+                  <div class="pet">
+                    <P>반려동물</P>
+                    <label for="">강아지</label>
+                    <input type="radio" name="" id="">
+                    <label for="">고양이</label>
+                    <input type="radio" name="" id="">
+                  </div>
+                </li>
 
 
-                  <li class="item">
-                    <p>연령</p>
-                    <ul class="check_box">
-                      <li class="item">
-                        <input type="radio" name="interest_arr" value="이유기" id="interest1">
-                        <label for="interest1" class="req"><span>이유기</span></label>
-                      </li>
-                      <li class="item">
-                        <input type="radio" name="interest_arr" value="성장기" id="interest2">
-                        <label for="interest2" class="req"><span>성장기</span></label>
-                      </li>
-                      <li class="item">
-                        <input type="radio" name="interest_arr" value="성년기" id="interest3">
-                        <label for="interest3" class="req"><span>성년기</span></label>
-                      </li>
-                      <li class="item">
-                        <input type="radio" name="interest_arr" value="노년기" id="interest3">
-                        <label for="interest3" class="req"><span>노년기</span></label>
-                      </li>
-                      <p>유형</p>
-                      <li>
-                        <input type="radio" name="interest_arr" value="노년기" id="interest3">
-                        <label for="interest3" class="req"><span>건식</span></label>
-                      </li>
-                      <li>
-                        <input type="radio" name="interest_arr" value="노년기" id="interest3">
-                        <label for="interest3" class="req"><span>냉동</span></label>
-                      </li>
+                <li class="item">
+                  <p>연령</p>
+                  <ul class="check_box">
+                    <li class="item">
+                      <input type="radio" name="interest_arr" value="이유기" id="interest1">
+                      <label for="interest1" class="req"><span>이유기</span></label>
+                    </li>
+                    <li class="item">
+                      <input type="radio" name="interest_arr" value="성장기" id="interest2">
+                      <label for="interest2" class="req"><span>성장기</span></label>
+                    </li>
+                    <li class="item">
+                      <input type="radio" name="interest_arr" value="성년기" id="interest3">
+                      <label for="interest3" class="req"><span>성년기</span></label>
+                    </li>
+                    <li class="item">
+                      <input type="radio" name="interest_arr" value="노년기" id="interest3">
+                      <label for="interest3" class="req"><span>노년기</span></label>
+                    </li>
+                    <p>유형</p>
+                    <li>
+                      <input type="radio" name="interest_arr" value="노년기" id="interest3">
+                      <label for="interest3" class="req"><span>건식</span></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="interest_arr" value="노년기" id="interest3">
+                      <label for="interest3" class="req"><span>냉동</span></label>
+                    </li>
 
-                    </ul>
-                  </li>
-                </ul>
-                <button type="submit" class="btn">전송</button>
+                  </ul>
+                </li>
+              </ul>
+              <button type="submit" class="btn">전송</button>
 
-              </div>
-          </fieldset>
-        </form>
-      </section>
-    </div>
+            </div>
+        </fieldset>
+      </form>
+    </section>
+
   </main>
 
   <footer>
@@ -354,6 +361,7 @@
       </ul>
     </div>
   </footer>
+
 
 </body>
 

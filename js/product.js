@@ -1,5 +1,5 @@
-$(document).ready(
-  function () {
+window.addEventListener("load", function () {
+  
 
     $(".tap a").click(function (e) {
       e.preventDefault();
@@ -12,5 +12,5 @@ $(document).ready(
     });
 
     $(".tap").eq(0).find("a").click();
-  }
-)
+  
+})

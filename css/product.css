@@ -1,56 +1,65 @@
+#itemPeel {
+  height: 100%;
+}
+
 #section-item {
-  background-image: url("../instagramimg_product/product/background/productbackgroundimage8.jpg");
+  /* background-image: url("../instagramimg_product/product/background/productbackgroundimage8.jpg"); */
+  background-color: #F5F5F7;
   position: relative;
-  max-width: 100%;
+
 }
 
 /* 검색창 */
 
 #section-item .inputbutton {
   position: relative;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  margin: auto;
 }
 
 #section-item .itemgroup {
   width: 900px;
-  height: 700px;
+  height: 800px;
   background-color: white;
   position: relative;
-  left: 600px;
-  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
 }
 
-#section-item .itemgroup input:focus {
+#section-item input:focus {
   outline: none;
 }
 
-#section-item .itemgroup input {
-  border: 3px solid rgb(218, 41, 28);
+#section-item input {
+  border: 3px solid #da291c;
   border-radius: 3rem;
   font-size: 2rem;
-  width: 600px;
+  width: 100%;
   height: 70px;
   position: relative;
-  left: 140px;
-  top: 20px;
+  text-indent: 0.7em;
+  background-color: transparent;
 }
 
-#section-item .itemgroup button {
+#section-item button {
   border: 0;
   background-color: #da291c;
   color: white;
   font-size: 1.8rem;
   border-radius: 50%;
   padding: 0.8rem 1.3rem;
-  position: relative;
-  top: 17px;
-  left: 66px;
+  position: absolute;
+  right: 0;
 }
 
 #section-item .textbox {
-  position: absolute;
-  color: white;
-  left: 50px;
-  top: 90px;
+  position: relative;
+  color: black;
+  text-align: center;
 }
 
 #section-item .textbox p:first-child {
@@ -62,42 +71,34 @@
 }
 
 /* 상품항목 */
-
-#section-item .listgroup {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 150px;
+#section-item .listgroup div {
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  overflow: hidden;
+  text-align: center;
+  margin: 15px 0;
 }
 
 #section-item .listgroup div img {
-  width: 200px;
   height: 200px;
-  margin: 20px;
-  border: 1px solid #ccc;
-  border-radius: 2rem;
-  margin-left: 40px;
 }
 
-#section-item .mainlist .tap>.row {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-sizing: border-box;
-  display: none;
-  flex-wrap: wrap;
+#section-item .listgroup {
+  position: relative;
 }
 
 
 #section-item .listgroup .row li {
   display: none;
-
 }
 
-#section-item .mainlist .tap {
+#section-item .tap>.row {
+  box-sizing: border-box;
+  display: none;
+  flex-wrap: wrap;
+}
+
+#section-item .tap {
   display: inline-flex;
 }
 
@@ -114,6 +115,7 @@
   border: 1px solid #ccc;
   border-radius: 1rem;
   color: black;
+  font-size: 1.6em;
 }
 
 #section-item .tap.active a {
@@ -122,10 +124,15 @@
 }
 
 #section-item .mainlist {
-  margin-left: 50px;
-  margin-top: -35px;
+  margin-top: 80px;
+  white-space: wrap;
+  text-align: center;
 }
 
 #section-item .row>li:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+#section-item .text {
+  width: 45%;
 }
