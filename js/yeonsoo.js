@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var mainswiper = new Swiper('#slide-banner .swiper', {
+    var eventswiper = new Swiper('#slide-banner .swiper', {
         loop: true,
         effect: 'fade',
         autoplay: {
@@ -27,17 +27,17 @@ $(document).ready(function () {
 
     });
 
-    var mainToggle = true;
+    var eventToggle = true;
 
     $(".toggle").click(function () {
         $(this).toggleClass("on");
-        if (mainToggle) {
+        if (eventToggle) {
             swiper.autoplay.stop();
             toggle = false;
         } else {
 
             swiper.autoplay.start();
-            mainToggle = true;
+            eventToggle = true;
         }
     })
 })
