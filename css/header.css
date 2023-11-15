@@ -80,3 +80,11 @@
 #topbanner h1{
   width: 0;
 }
+
+.scroll #hd{
+  transform: translateY(-28px);
+}
+
+#hd{
+  transition: .5s;
+}

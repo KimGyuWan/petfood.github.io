@@ -40,5 +40,13 @@ var familyInfo = {
 
         
     })
+
+    $(window).scroll(function(){
+            if(  $(window).scrollTop() > 10    ){
+                 $("body").addClass("scroll")
+            }else{
+                $("body").removeClass("scroll")
+            }
+    })
   })
   
