@@ -48,7 +48,6 @@ body * {
 }
 
 #slide-banner h2 {
-  position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
   margin-top: 10px;
@@ -58,7 +57,6 @@ body * {
 }
 
 #slide-banner .title-box {
-  position: absolute;
   color: #fff;
 }
 
@@ -99,8 +97,6 @@ body * {
   height: auto;
   width: 5rem;
   top: 50%;
-  position: absolute;
-
   transform: translate(0, -50%);
 }
 
@@ -128,9 +124,6 @@ body * {
 
 #slide-banner .btns {
   padding: 0;
-  position: absolute;
-  display: flex;
-  align-items: center;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 100;
@@ -171,9 +164,6 @@ body * {
 #line-banner .container {
   margin-top: -2rem;
   z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: #fff;
   padding: 0 5rem;
   height: 200px;
@@ -198,7 +188,6 @@ body * {
 }
 
 #line-banner .container button i {
-  position: absolute;
   font-size: 3rem;
   left: 50%;
   top: 50%;
@@ -207,10 +196,6 @@ body * {
 
 #line-banner .container button:hover {
   transform: scale(1.5);
-}
-
-#line-banner .container ul {
-  display: flex;
 }
 
 #line-banner .container ul li {
@@ -224,11 +209,11 @@ body * {
 }
 
 #line-banner .container ul li i {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 #line-banner .container ul li+li {
   margin-left: 1rem;
@@ -238,14 +223,10 @@ body * {
 /* footer */
 
 #ft .container {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
   padding-top: 3rem;
 }
 
 #ft .container:nth-of-type(2) {
-  justify-content: end;
   padding-bottom: 3rem;
 }
 
@@ -253,10 +234,6 @@ body * {
   display: block;
 }
 
-#ft .info {
-  display: flex;
-  justify-content: space-between;
-}
 
 #ft .info>li {
   font-size: 1.5rem;
@@ -276,7 +253,6 @@ body * {
   width: 50%;
   z-index: 1000;
   border-bottom: 1px solid #da291c;
-  position: absolute;
   transform: translate(0, -100%);
 }
 
@@ -291,7 +267,6 @@ body * {
   left: 0;
   right: 0;
   background-color: #fff;
-  position: absolute;
 }
 
 #ft .family button {
@@ -344,8 +319,6 @@ body * {
 
 #ft ul.icon {
   padding-top: 0;
-  display: flex;
-  justify-content: end;
   margin-right: 1rem;
 }
 
