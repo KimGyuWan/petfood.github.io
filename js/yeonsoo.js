@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var mainswiper = new Swiper('#harim.swiper', {
+    var mainswiper = new Swiper('#slide-banner .swiper', {
         loop: true,
         effect: 'fade',
         autoplay: {
@@ -7,13 +7,13 @@ $(document).ready(function () {
         },
 
         pagination: {
-            el: '#harim .swiper-pagination',
+            el: '#slide-banner .swiper-pagination',
             clickable: true,
         },
 
         navigation: {
-            nextEl: '#harim .swiper-button-next',
-            prevEl: '#harim .swiper-button-prev',
+            nextEl: '#slide-banner .swiper-button-next',
+            prevEl: '#slide-banner .swiper-button-prev',
         },
         on: {
             init: function () {
@@ -27,17 +27,17 @@ $(document).ready(function () {
 
     });
 
-    var toggle = true;
+    var mainToggle = true;
 
     $(".toggle").click(function () {
         $(this).toggleClass("on");
-        if (toggle) {
+        if (mainToggle) {
             swiper.autoplay.stop();
             toggle = false;
         } else {
 
             swiper.autoplay.start();
-            toggle = true;
+            mainToggle = true;
         }
     })
 })

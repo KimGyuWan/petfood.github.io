@@ -108,7 +108,7 @@ body * {
   font-weight: 400;
 }
 
-.swiper-pagination-bullet {
+#slide-banner .swiper-pagination-bullet {
   width: 1rem;
   height: 1rem;
   background-color: rgba(225, 225, 225, 0.5);
@@ -116,7 +116,7 @@ body * {
   opacity: 1;
 }
 
-.swiper-pagination-bullet-active {
+#slide-banner .swiper-pagination-bullet-active {
   background-color: #da291c;
   width: 3rem;
   border-radius: 2rem;
@@ -341,7 +341,7 @@ body * {
   background-position: center;
 }
 
-#ft ul.icon li.insta>a {
+#ft ul.icon li.ins>a {
   background-image: url(../img/instalogo.png);
 }
 
@@ -352,26 +352,26 @@ body * {
 
 
 .active0 #slide-banner,
-.active0 .swiper-slide {
+.active0 #slide-banner .swiper-slide {
   background-color: #6B7692;
 }
 
 .active1 #slide-banner,
-.active1 .swiper-slide {
+.active1 #slide-banner .swiper-slide {
   background-color: #7AD2BA;
 }
 
 .active2 #slide-banner,
-.active2 .swiper-slide {
+.active2 #slide-banner .swiper-slide {
   background-color: #EBE8D9;
 }
 
 .active3 #slide-banner,
-.active3 .swiper-slide {
+.active3 #slide-banner .swiper-slide {
   background-color: #E0914E;
 }
 
 .active4 #slide-banner,
-.active4 .swiper-slide {
+.active4 #slide-banner .swiper-slide {
   background-color: #3E6C61;
 }
