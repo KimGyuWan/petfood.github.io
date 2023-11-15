@@ -1,42 +1,3 @@
-#topbanner {
-  line-height: 2;
-  border-bottom: 1px solid #ccc;
-}
-
-#logo {
-  height: 400px;
-  border-bottom: 1px solid #ccc;
-}
-
-#gnb {
-  line-height: 4;
-  border-bottom: 1px solid #ccc;
-}
-
-header ul {
-  border-bottom: 1px solid #ccc;
-}
-
-#slide-banner {
-  height: 500px;
-  border-bottom: 1px solid #ccc;
-}
-
-#section-brand {
-  height: 500px;
-  border-bottom: 1px solid #ccc;
-}
-
-#section-item {
-  height: 500px;
-  border-bottom: 1px solid #ccc;
-}
-
-#section-instagram {
-  height: 500px;
-  border-bottom: 1px solid #ccc;
-}
-
 .container {
   max-width: 1600px;
   margin: 0 auto;
@@ -60,7 +21,7 @@ header ul {
 
 
 body * {
-  font-family: Noto Sans KR;
+  font-family: "Noto Sans KR";
   padding: 0;
   margin: 0;
 }
@@ -82,7 +43,6 @@ body * {
 }
 
 #slide-banner {
-  position: relative;
   height: auto;
   border-bottom: 1px solid #ccc;
 }
@@ -163,7 +123,7 @@ body * {
 .swiper-pagination-bullet-active {
   background-color: #da291c;
   width: 3rem;
-  border-radius: 3rem;
+  border-radius: 2rem;
 }
 
 #slide-banner .btns {
@@ -174,7 +134,7 @@ body * {
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 100;
-  bottom: 0;
+  bottom: 3rem;
 }
 
 #slide-banner .btns .swiper-pagination {
@@ -185,7 +145,6 @@ body * {
 }
 
 #slide-banner .btns button {
-  position: relative;
   background-color: transparent;
   border: none;
   width: 2rem;
@@ -210,23 +169,25 @@ body * {
 /* line-banner */
 
 #line-banner .container {
+  margin-top: -2rem;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #da291c;
+  background-color: #fff;
   padding: 0 5rem;
   height: 200px;
-
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.16);
+  border-radius: 2rem;
 }
 
 #line-banner .container h2 {
-  color: #fff;
+  color: #000;
   line-height: 3rem;
 
 }
 
 #line-banner .container button {
-  position: relative;
   background-color: #fff;
   color: #da291c;
   height: 3rem;
@@ -253,8 +214,8 @@ body * {
 }
 
 #line-banner .container ul li {
-  position: relative;
-  background-color: #fff;
+  border: 1px solid #da291c;
+  background-color: #F5F5F7;
   color: #da291c;
   font-size: 3rem;
   width: 7rem;
@@ -276,20 +237,20 @@ body * {
 
 /* footer */
 
-#ft>.container {
+#ft .container {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 3rem 0;
+  padding-top: 3rem;
+}
+
+#ft .container:nth-of-type(2) {
+  justify-content: end;
+  padding-bottom: 3rem;
 }
 
 #ft h2 a {
   display: block;
-}
-
-#ft .icon>.container {
-  padding: 1rem 0;
-  background-color: #da291c;
 }
 
 #ft .info {
@@ -307,10 +268,6 @@ body * {
 
 #ft .info>li>ul {
   font-size: 0.8rem;
-}
-
-#ft .flex-box {
-  position: relative;
 }
 
 #ft .family {
@@ -358,7 +315,7 @@ body * {
 
 #ft .family:hover ul {
   max-height: 800px;
-  box-shadow: 2px 2px 10px 2px #da291c;
+  box-shadow: 0 6px 9px #da291c;
 }
 
 #ft .website li {
@@ -385,36 +342,63 @@ body * {
   color: #fff;
 }
 
-#ft .icon ul {
+#ft ul.icon {
+  padding-top: 0;
   display: flex;
   justify-content: end;
   margin-right: 1rem;
 }
 
-#ft .icon ul li {
-  background-color: #fff;
+#ft ul.icon li {
+  background-color: #F5F5F7;
   border-radius: 100%;
 }
 
-#ft .icon ul li+li {
+#ft ul.icon li+li {
   margin-left: 0.5rem;
 }
 
-#ft .icon ul li>a {
+#ft ul.icon li>a {
   padding: 1.2rem;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   display: block;
   background-image: url(../img/facebooklogo.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#ft .icon ul li.insta>a {
+#ft ul.icon li.insta>a {
   background-image: url(../img/instalogo.png);
 }
 
 
-#ft .icon ul li.youtub>a {
+#ft ul.icon li.youtub>a {
   background-image: url(../img/youtubelogo.png);
+}
+
+
+.active0 #slide-banner,
+.active0 .swiper-slide {
+  background-color: #6B7692;
+}
+
+.active1 #slide-banner,
+.active1 .swiper-slide {
+  background-color: #7AD2BA;
+}
+
+.active2 #slide-banner,
+.active2 .swiper-slide {
+  background-color: #EBE8D9;
+}
+
+.active3 #slide-banner,
+.active3 .swiper-slide {
+  background-color: #E0914E;
+}
+
+.active4 #slide-banner,
+.active4 .swiper-slide {
+  background-color: #3E6C61;
 }

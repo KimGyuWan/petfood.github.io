@@ -41,33 +41,33 @@
   <body>
     <header id="hd">
       <div id="topbanner">하림펫푸드 제품 첫 구매 시 간식 100원 이벤트</div>
-      <div class="container">
-        <div id="logo">
-          <h1>logo하림펫푸드</h1>
-        </div>
-        <ul id="gnb">
-          <li><a href="#">슬라이드배너</a></li>
-          <li><a href="#">브랜드설명</a></li>
-          <li><a href="#">상품들</a></li>
-          <li><a href="#">인스타후기</a></li>
-          <li><a href="#">체험</a></li>
-        </ul>
-        <ul>
-          <li>KOR</li>
-          <li>ENG</li>
-        </ul>
+
+      <div id="logo">
+        <h1>logo하림펫푸드</h1>
       </div>
+      <ul id="gnb">
+        <li><a href="#">슬라이드배너</a></li>
+        <li><a href="#">브랜드설명</a></li>
+        <li><a href="#">상품들</a></li>
+        <li><a href="#">인스타후기</a></li>
+        <li><a href="#">체험</a></li>
+      </ul>
+      <ul>
+        <li>KOR</li>
+        <li>ENG</li>
+      </ul>
+
     </header>
 
     <main>
-      <div class="container">
-        <section id="slide-banner">
+      <section id="slide-banner" class="position-relative">
+        <div class="container">
           <h2 class="ir-hidden">EVENT</h2>
           <div class="swiper" id="harim">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a href="">
-                  <img src="./img/slide1.jpg" alt="">
+                  <img src="./img/slide1.png" alt="">
                   <div class="title-box title-left">
                     <h3>반짝 배송 OPEN</h3>
                     <p>오늘 주문, 반짝하면 새벽 도착!</p>
@@ -81,7 +81,7 @@
                       할인해 봄</h3>
                     <p>봄맞이 최대 50% 할인 혜택 받으세요</p>
                   </div>
-                  <img src="./img/slide2.jpg" alt="">
+                  <img src="./img/slide2.png" alt="">
                 </a>
               </div>
               <div class="swiper-slide">
@@ -92,7 +92,7 @@
                     <p>하림펫푸드는 사료가 아니다<br />
                       음식이다</p>
                   </div>
-                  <img src="./img/slide3.jpg" alt="">
+                  <img src="./img/slide3.png" alt="">
                 </a>
               </div>
               <div class="swiper-slide">
@@ -102,7 +102,7 @@
                     <p>#하림팻푸드 댕냥이 동안선발대회<br />
                       반려동물 자랑도 하고 간식도 받고!</p>
                   </div>
-                  <img src="./img/slide4.jpg" alt="">
+                  <img src="./img/slide4.png" alt="">
                 </a>
               </div>
               <div class="swiper-slide">
@@ -113,129 +113,130 @@
                     <p>하림펫푸드 제품 리뷰 작성시<br />
                       추첨을 통해 간식 샘플 증정</p>
                   </div>
-                  <img src="./img/slide5.jpg" alt="">
+                  <img src="./img/slide5.png" alt="">
                 </a>
               </div>
             </div>
             <div class="btns">
               <div class="swiper-pagination"></div>
-              <button class="toggle"></button>
+              <button class="toggle position-relative"></button>
             </div>
 
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-        </section>
-        <section id="line-banner">
-          <div class="container">
-            <h2>GOLD MEMBER<br />골드멤버8가지혜택</h2>
-            <button><i class="bi bi-plus"></i></button>
-            <div class="member">
-              <ul>
-                <li><i class="bi bi-balloon-heart" class="ir-hidden"></i></li>
-                <li><i class="bi bi-gift"></i></li>
-                <li><i class="bi bi-box2-heart"></i></li>
-                <li><i class="bi bi-ticket-perforated"></i></li>
-                <li><i class="bi bi-truck"></i></li>
-                <li><i class="bi bi-envelope-check"></i></li>
-                <li><i class="bi bi-cash-coin"></i></li>
-                <li><i class="bi bi-headset"></i></li>
-              </ul>
-            </div>
+        </div>
+      </section>
+      <section id="line-banner">
+        <div class="container position-relative">
+          <h2>GOLD MEMBER<br />골드멤버8가지혜택</h2>
+          <button class="position-relative"><i class="bi bi-plus"></i></button>
+          <div class="member">
+            <ul>
+              <li class="position-relative"><i class="bi bi-balloon-heart" class="ir-hidden"></i></li>
+              <li class="position-relative"><i class="bi bi-gift"></i></li>
+              <li class="position-relative"><i class="bi bi-box2-heart"></i></li>
+              <li class="position-relative"><i class="bi bi-ticket-perforated"></i></li>
+              <li class="position-relative"><i class="bi bi-truck"></i></li>
+              <li class="position-relative"><i class="bi bi-envelope-check"></i></li>
+              <li class="position-relative"><i class="bi bi-cash-coin"></i></li>
+              <li class="position-relative"><i class="bi bi-headset"></i></li>
+            </ul>
           </div>
-        </section>
-        <section id="section-brand">
-          <h2>우리의 약속<br>OUR COMMITMENT</h2>
-        </section>
-        <section id="section-item">
-          <h2>상품들</h2>
-        </section>
-        <section id="section-instagram">
-          <h2>INSTAGRAM후기</h2>
-        </section>
-        <section id="form" class="sec">
-          <form action="">
-            <fieldset>
-              <legend>맞춤영양 무료 체험 프로그램</legend>
-              <div class="inner d-flex justifycontent-spacebetween">
-                <p>잘먹을까? 잘맞을까? 고민이시라면? <br> 무료 체험 사료로 시작해보세요</p>
-                <div class="form_interest postion-rel">
-                  <ul class="list_wrap d-flex">
-                    <li class="item">
-                      <div class="input_box postion-abs">
-                        <label for="nane">이름</label>
-                        <input type="text" name="name" id="name">
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="input_box">
-                        <label for="pet_name">반려동물 이름</label>
-                        <input type="text" name="pet_name" id="pet_name">
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="input_box">
-                        <label for="tel">연락처</label>
-                        <input type="text" name="tel" id="tel">
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="input_box">
-                        <label for="address">주소</label>
-                        <input type="text" name="address" id="address">
-                      </div>
-                    </li>
+        </div>
+      </section>
+      <section id="section-brand">
+        <h2>우리의 약속<br>OUR COMMITMENT</h2>
+      </section>
+      <section id="section-item">
+        <h2>상품들</h2>
+      </section>
+      <section id="section-instagram">
+        <h2>INSTAGRAM후기</h2>
+      </section>
+      <section id="form" class="sec">
+        <form action="">
+          <fieldset>
+            <legend>맞춤영양 무료 체험 프로그램</legend>
+            <div class="inner d-flex justifycontent-spacebetween">
+              <p>잘먹을까? 잘맞을까? 고민이시라면? <br> 무료 체험 사료로 시작해보세요</p>
+              <div class="form_interest postion-rel">
+                <ul class="list_wrap d-flex">
+                  <li class="item">
+                    <div class="input_box postion-abs">
+                      <label for="nane">이름</label>
+                      <input type="text" name="name" id="name">
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="input_box">
+                      <label for="pet_name">반려동물 이름</label>
+                      <input type="text" name="pet_name" id="pet_name">
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="input_box">
+                      <label for="tel">연락처</label>
+                      <input type="text" name="tel" id="tel">
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="input_box">
+                      <label for="address">주소</label>
+                      <input type="text" name="address" id="address">
+                    </div>
+                  </li>
 
-                    <li class="item2 postion-abs">
-                      <div class="pet">
-                        <P>반려동물</P>
-                        <label for="">강아지</label>
-                        <input type="radio" name="" id="">
-                        <label for="">고양이</label>
-                        <input type="radio" name="" id="">
-                      </div>
-                    </li>
+                  <li class="item2 postion-abs">
+                    <div class="pet">
+                      <P>반려동물</P>
+                      <label for="">강아지</label>
+                      <input type="radio" name="" id="">
+                      <label for="">고양이</label>
+                      <input type="radio" name="" id="">
+                    </div>
+                  </li>
 
 
-                    <li class="item">
-                      <p>연령</p>
-                      <ul class="check_box">
-                        <li class="item">
-                          <input type="radio" name="interest_arr" value="이유기" id="interest1">
-                          <label for="interest1" class="req"><span>이유기</span></label>
-                        </li>
-                        <li class="item">
-                          <input type="radio" name="interest_arr" value="성장기" id="interest2">
-                          <label for="interest2" class="req"><span>성장기</span></label>
-                        </li>
-                        <li class="item">
-                          <input type="radio" name="interest_arr" value="성년기" id="interest3">
-                          <label for="interest3" class="req"><span>성년기</span></label>
-                        </li>
-                        <li class="item">
-                          <input type="radio" name="interest_arr" value="노년기" id="interest3">
-                          <label for="interest3" class="req"><span>노년기</span></label>
-                        </li>
-                        <p>유형</p>
-                        <li>
-                          <input type="radio" name="interest_arr" value="노년기" id="interest3">
-                          <label for="interest3" class="req"><span>건식</span></label>
-                        </li>
-                        <li>
-                          <input type="radio" name="interest_arr" value="노년기" id="interest3">
-                          <label for="interest3" class="req"><span>냉동</span></label>
-                        </li>
+                  <li class="item">
+                    <p>연령</p>
+                    <ul class="check_box">
+                      <li class="item">
+                        <input type="radio" name="interest_arr" value="이유기" id="interest1">
+                        <label for="interest1" class="req"><span>이유기</span></label>
+                      </li>
+                      <li class="item">
+                        <input type="radio" name="interest_arr" value="성장기" id="interest2">
+                        <label for="interest2" class="req"><span>성장기</span></label>
+                      </li>
+                      <li class="item">
+                        <input type="radio" name="interest_arr" value="성년기" id="interest3">
+                        <label for="interest3" class="req"><span>성년기</span></label>
+                      </li>
+                      <li class="item">
+                        <input type="radio" name="interest_arr" value="노년기" id="interest3">
+                        <label for="interest3" class="req"><span>노년기</span></label>
+                      </li>
+                      <p>유형</p>
+                      <li>
+                        <input type="radio" name="interest_arr" value="노년기" id="interest3">
+                        <label for="interest3" class="req"><span>건식</span></label>
+                      </li>
+                      <li>
+                        <input type="radio" name="interest_arr" value="노년기" id="interest3">
+                        <label for="interest3" class="req"><span>냉동</span></label>
+                      </li>
 
-                      </ul>
-                    </li>
-                  </ul>
-                  <button type="submit" class="btn">전송</button>
+                    </ul>
+                  </li>
+                </ul>
+                <button type="submit" class="btn">전송</button>
 
-                </div>
-            </fieldset>
-          </form>
-        </section>
-      </div>
+              </div>
+          </fieldset>
+        </form>
+      </section>
+
     </main>
 
     <footer id="ft">
@@ -266,7 +267,7 @@
             </ul>
           </li>
         </ul>
-        <div class="flex-box">
+        <div class="flex-box position-relative">
           <div class="family">
             <button>Familysite</button>
             <ul>
@@ -290,14 +291,12 @@
           </div>
         </div>
       </div>
-      <div class="icon">
-        <div class="container">
-          <ul>
-            <li class="facebook"><a href=""></a></li>
-            <li class="insta"><a href=""></a></li>
-            <li class="youtub"><a href=""></a></li>
-          </ul>
-        </div>
+      <div class="container">
+        <ul class="icon">
+          <li class="facebook"><a href=""></a></li>
+          <li class="insta"><a href=""></a></li>
+          <li class="youtub"><a href=""></a></li>
+        </ul>
       </div>
     </footer>
   </body>

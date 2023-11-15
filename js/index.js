@@ -1,8 +1,10 @@
 $(document).ready(function () {
     var mainswiper = new Swiper('#harim.swiper', {
-        autoplay: true,
         loop: true,
-        speed: 1000,
+        effect: 'fade',
+        autoplay: {
+            delay: 4000
+        },
 
         pagination: {
             el: '#harim .swiper-pagination',
@@ -13,6 +15,15 @@ $(document).ready(function () {
             nextEl: '#harim .swiper-button-next',
             prevEl: '#harim .swiper-button-prev',
         },
+        on: {
+            init: function () {
+                document.body.classList = "active0"
+            },
+            realIndexChange: function () {
+                document.body.classList = "active" + this.realIndex;
+                console.log(this)
+            }
+        }
 
     });
 
