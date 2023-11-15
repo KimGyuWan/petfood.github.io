@@ -1,16 +1,16 @@
 window.addEventListener("load", function () {
-  
 
-    $(".tap a").click(function (e) {
-      e.preventDefault();
-      $(".tap").removeClass("active");
-      $(this).parent(".tap").addClass("active");
 
-      var targetnum = $(this).attr('href');
-      $(".listgroup .row li").removeClass("d-block");
-      $(targetnum).addClass("d-block");
-    });
+  $("#section-item .tap a").click(function (e) {
+    e.preventDefault();
+    $("#section-item .tap").removeClass("active");
+    $(this).parent("#section-item .tap").addClass("active");
 
-    $(".tap").eq(0).find("a").click();
-  
+    var targetnum = $(this).attr('href');
+    $("#section-item .listgroup .row li").removeClass("d-block");
+    $(targetnum).addClass("d-block");
+  });
+
+  $("#section-item .tap").eq(0).find("a").click();
+
 })
