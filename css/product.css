@@ -23,6 +23,7 @@
   width: 900px;
   height: 800px;
   background-color: white;
+  border: 1px solid #da291c;
   position: relative;
   display: flex;
   flex-direction: column;
