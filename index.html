@@ -4,58 +4,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>하림펫푸드</title>
+  <!-- 초기화 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <!-- 공통클래스, 부트스트랩 v4.6 -->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- 플러그인 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- 스타일페이지 -->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/popup.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/instagram.css">
+  <link rel="stylesheet" href="./css/product.css">
+  <link rel="stylesheet" href="./css/yeonsoo.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <!-- 바닐라js -->
+  <!-- 제이쿼리 -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+  <script src="./js/popup.js"></script>
+  <script src="./js/product.js"></script>
+  <script src="./js/instagram.js"></script>
+  <script src="./js/yeonsoo.js"></script>
+  <script src="./nav.js"></script>
 </head>
 
-<body>
-  <!DOCTYPE html>
-  <html lang="en">
+  <body id="pagetop" class="popupdiv">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>하림펫푸드</title>
-    <!-- 초기화 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <!-- 공통클래스, 부트스트랩 v4.6 -->
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <!-- 플러그인 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- 스타일페이지 -->
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/popup.css">
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/instagram.css">
-    <link rel="stylesheet" href="./css/product.css">
-    <link rel="stylesheet" href="./css/yeonsoo.css">
-    <!-- 바닐라js -->
-    <!-- 제이쿼리 -->
-    <script src="https://code.jquery.com/jquery-2.2.4.js"
-      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-      <script src="./js/popup.js"></script>
-      <script src="./js/product.js"></script>
-      <script src="./js/instagram.js"></script>
-      <script src="./js/yeonsoo.js"></script>
-  </head>
-
-  <body class="popupdiv">
     <div id="popupWindow" class="bg-white border position-fixed m-auto">
       <div class="content"><img src="./" alt=""></div>
       <div class="close">
         <button class="closeBtn bg-transparent"><i class="bi bi-x-lg"></i></button>
       </div>
     </div>
-    <header id="hd">
+
+    <header id="hd" class="border-bottom fixed-top bg-white">
+      <div id="topbanner" class="bgactiveColor text-center p-1"><a href="" class="text-white">하림펫푸드 제품 첫 구매 시 간식 100원
+          이벤트</a></div>
+      <div class="container rel d-flex justify-content-between align-items-center py-2">
+        <h1 class="mb-0 w-0">
+          <a href="" class="d-block"><img src="./headerimg/harim.png" alt="" class="d-block"></a>
+        </h1>
+    
+        <ul id="gnb" class="d-flex mb-0">
+          <li class="px-3"><a href="#slide-banner" class="text-dark  position-relative">EVENT</a></li>
+          <li class="px-3"><a href="#section-brand" class="text-dark  position-relative">하림펫푸드</a></li>
+          <li class="px-3"><a href="#section-item" class="text-dark  position-relative">제품</a></li>
+          <li class="px-3"><a href="#section-instagram" class="text-dark   position-relative">후기</a></li>
+          <li class="px-3"><a href="#form" class="text-dark   position-relative">체험</a></li>
+        </ul>
+    
+        <div id="family" class="position-relative w-0">
+          <button class="position-relative bg-transparent border-0">KOR</button>
+          <ul class="d-none mb-0">
+            <li><a href="#kr" class="on">KOR</a></li>
+            <li><a href="#en" class="">ENG</a></li>
+          </ul>
+        </div>
+      </div>
       
     </header>
+
+    <div id="popup" class="position-fixed bgactiveColor">
+      <a href="#pagetop"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
 
     <main>
       <section id="slide-banner" class="position-relative">
@@ -119,13 +141,13 @@
               <div class="swiper-pagination"></div>
               <button class="toggle position-relative"></button>
             </div>
-      
+    
             <div class="swiper-button-prev position-absolute"></div>
             <div class="swiper-button-next position-absolute"></div>
           </div>
         </div>
       </section>
-
+    
       <section id="line-banner">
         <div class="container position-relative d-flex align-items-center justify-content-between">
           <h2>GOLD MEMBER<br />골드멤버8가지혜택</h2>
@@ -144,19 +166,19 @@
           </div>
         </div>
       </section>
-
+    
       <section id="section-item" class="w-100">
         <div id="itemPeel" class="container  d-flex justify-content-center align-items-center">
           <div class="text">
             <div class="textbox">
               <h2>알맞은 제품을 찾고 계세요?</h2>
             </div>
-      
+    
             <div class="inputbutton">
               <input type="text" placeholder="핫 키워드 제품을 찾아보세요!!">
               <button><i class="bi bi-search-heart"></i></button>
             </div>
-      
+    
             <ul class="mainlist">
               <li class="tap active"><a href=".no0">#우리 아이들도 100세까지</a></li>
               <li class="tap"><a href=".no1">#간식 / 영양제</a></li>
@@ -165,11 +187,11 @@
               <li class="tap"><a href=".no4">#하림펫푸드 PICK ITEM</a></li>
             </ul>
           </div>
-      
+    
           <div class="itemgroup">
-      
+    
             <div class="listgroup">
-      
+    
               <ul class="row mx-0" data-number="">
                 <li class="col-6 no0"><a href="#none">
                     <div><img src="./instagramimg_product/product/li1/list1_1.jpg" alt="list1_1"></div>
@@ -266,7 +288,7 @@
           </div>
         </div>
       </section>
-
+    
       <section id="section-instagram" class="container">
         <h2>INSTAGRAM후기</h2>
         <div class="istagramMain"><img src="./instagramimg_product/instagram/instagramMain.png" alt=""></div>
@@ -310,11 +332,12 @@
             </div>
           </div>
         </div>
-      
+    
       </section>
-        
-
+    
+    
     </main>
+
     <footer id="ft">
       <div class="container d-flex justify-content-between align-items-center">
         <h2>
@@ -376,8 +399,6 @@
       </div>
     </footer>
 
-   
-
   </body>
 
-</html>
+  </html>
