@@ -4,216 +4,380 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>하림펫푸드</title>
-  <!-- 초기화 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-  <!-- 공통클래스, 부트스트랩 v4.6 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <!-- 플러그인 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- 스타일페이지 -->
-  <link rel="stylesheet" href="./css/layout.css">
-  <link rel="stylesheet" href="./css/instagram.css">
-  <link rel="stylesheet" href="./css/product.css">
-  <link rel="stylesheet" href="./css/common.css">
-  <!-- <link rel="stylesheet" href="./css/popup.css"> -->
-  <!-- 바닐라js -->
-  <!-- 제이쿼리 -->
-  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-    crossorigin="anonymous"></script>
-  <!-- <script src="./js/popup.js"></script> -->
-  <script src="./js/product.js"></script>
-  <script src="./js/instagram.js"></script>
+  <title>Document</title>
 </head>
 
-<body class="popupdiv">
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
 
-  <!-- <div id="popupWindow" class="bg-white border position-fixed m-auto">
-    <div class="content"><img src="./" alt=""></div>
-    <div class="close">
-      <button class="closeBtn bg-transparent"><i class="bi bi-x-lg"></i></button>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하림펫푸드</title>
+    <!-- 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- 공통클래스, 부트스트랩 v4.6 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- 플러그인 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 스타일페이지 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/instagram.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/yeonsoo.css">
+    <!-- 바닐라js -->
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+      <script src="./js/popup.js"></script>
+      <script src="./js/product.js"></script>
+      <script src="./js/instagram.js"></script>
+      <script src="./js/yeonsoo.js"></script>
+  </head>
+
+  <body class="popupdiv">
+    <div id="popupWindow" class="bg-white border position-fixed m-auto">
+      <div class="content"><img src="./" alt=""></div>
+      <div class="close">
+        <button class="closeBtn bg-transparent"><i class="bi bi-x-lg"></i></button>
+      </div>
     </div>
-  </div> -->
+    <header id="hd">
+      
+    </header>
 
-  <header id="hd">
-    
-  </header>
-
-  <main>
-    <section id="section-item" class="w-100">
-      <div id="itemPeel" class="container  d-flex justify-content-center align-items-center">
-        <div class="text">
-          <div class="textbox">
-            <h2>알맞은 제품을 찾고 계세요?</h2>
+    <main>
+      <section id="slide-banner" class="position-relative">
+        <div class="container">
+          <h2 class="ir-hidden position-">EVENT</h2>
+          <div class="swiper" id="harim">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="">
+                  <img src="./img/slide1.png" alt="">
+                  <div class="title-box position-absolute title-left">
+                    <h3>반짝 배송 OPEN</h3>
+                    <p>오늘 주문, 반짝하면 새벽 도착!</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <div class="title-box position-absolute title-left">
+                    <h3>설레는 봄<br />
+                      할인해 봄</h3>
+                    <p>봄맞이 최대 50% 할인 혜택 받으세요</p>
+                  </div>
+                  <img src="./img/slide2.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <div class="title-box position-absolute title-black title-left">
+                    <h3>신선함이 가득한<br />
+                      당일생산</h3>
+                    <p>하림펫푸드는 사료가 아니다<br />
+                      음식이다</p>
+                  </div>
+                  <img src="./img/slide3.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <div class="title-box position-absolute title-right">
+                    <h3>하림펫푸드는<br />사료가 아니다 음식이다</h3>
+                    <p>#하림팻푸드 댕냥이 동안선발대회<br />
+                      반려동물 자랑도 하고 간식도 받고!</p>
+                  </div>
+                  <img src="./img/slide4.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="">
+                  <div class="title-box position-absolute title-right">
+                    <h3>멍이냥이얌얌<br />
+                      리뷰 EVENT</h3>
+                    <p>하림펫푸드 제품 리뷰 작성시<br />
+                      추첨을 통해 간식 샘플 증정</p>
+                  </div>
+                  <img src="./img/slide5.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="btns position-absolute d-flex align-items-center">
+              <div class="swiper-pagination"></div>
+              <button class="toggle position-relative"></button>
+            </div>
+      
+            <div class="swiper-button-prev position-absolute"></div>
+            <div class="swiper-button-next position-absolute"></div>
           </div>
-
-          <div class="inputbutton">
-            <input type="text" placeholder="핫 키워드 제품을 찾아보세요!!">
-            <button><i class="bi bi-search-heart"></i></button>
-          </div>
-
-          <ul class="mainlist">
-            <li class="tap active"><a href=".no0">#우리 아이들도 100세까지</a></li>
-            <li class="tap"><a href=".no1">#간식 / 영양제</a></li>
-            <li class="tap"><a href=".no2">#휴먼그레이드 PICK</a></li>
-            <li class="tap"><a href=".no3">#가장 맛있는 시간 30일</a></li>
-            <li class="tap"><a href=".no4">#하림펫푸드 PICK ITEM</a></li>
-          </ul>
         </div>
+      </section>
 
-        <div class="itemgroup">
+      <section id="line-banner">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+          <h2>GOLD MEMBER<br />골드멤버8가지혜택</h2>
+          <button class="position-relative"><i class="bi bi-plus position-absolute"></i></button>
+          <div class="member">
+            <ul class="d-flex">
+              <li class="position-relative"><i class="bi bi-balloon-heart position-absolute" class="ir-hidden"></i></li>
+              <li class="position-relative"><i class="bi bi-gift position-absolute"></i></li>
+              <li class="position-relative"><i class="bi bi-box2-heart position-absolute"></i></li>
+              <li class="position-relative"><i class="bi bi-ticket-perforated position-absolute"></i></li>
+              <li class="position-relative"><i class="bi bi-truck position-absolute"></i></li>
+              <li class="position-relative"><i class="bi bi-envelope-check position-absolute"></i></li>
+              <li class="position-relative"><i class="bi bi-cash-coin position-absolute"></i></li>
+              <li class="position-relative"><i class="bi bi-headset position-absolute"></i></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-          <div class="listgroup">
+      <section id="section-item" class="w-100">
+        <div id="itemPeel" class="container  d-flex justify-content-center align-items-center">
+          <div class="text">
+            <div class="textbox">
+              <h2>알맞은 제품을 찾고 계세요?</h2>
+            </div>
+      
+            <div class="inputbutton">
+              <input type="text" placeholder="핫 키워드 제품을 찾아보세요!!">
+              <button><i class="bi bi-search-heart"></i></button>
+            </div>
+      
+            <ul class="mainlist">
+              <li class="tap active"><a href=".no0">#우리 아이들도 100세까지</a></li>
+              <li class="tap"><a href=".no1">#간식 / 영양제</a></li>
+              <li class="tap"><a href=".no2">#휴먼그레이드 PICK</a></li>
+              <li class="tap"><a href=".no3">#가장 맛있는 시간 30일</a></li>
+              <li class="tap"><a href=".no4">#하림펫푸드 PICK ITEM</a></li>
+            </ul>
+          </div>
+      
+          <div class="itemgroup">
+      
+            <div class="listgroup">
+      
+              <ul class="row mx-0" data-number="">
+                <li class="col-6 no0"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li1/list1_1.jpg" alt="list1_1"></div>
+                  </a></li>
+                <li class="col-6 no0"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li1/list1_2.jpg" alt="list1_2"></div>
+                  </a></li>
+                <li class="col-6 no0"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li1/list1_3.jpg" alt="list1_3"></div>
+                  </a></li>
+                <li class="col-6 no0"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li1/list1_4.jpg" alt="list1_4"></div>
+                  </a></li>
+                <li class="col-6 no0"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li1/list1_5.jpg" alt="list1_5"></div>
+                  </a></li>
+                <li class="col-6 no0"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li1/list1_6.jpg" alt="list1_6"></div>
+                  </a></li>
+                <li class="col-6 no1"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li2/list2_1.jpg" alt="list2_1"></div>
+                  </a></li>
+                <li class="col-6 no1"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li2/list2_2.jpg" alt="list2_2"></div>
+                  </a></li>
+                <li class="col-6 no1"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li2/list2_3.png" alt="list2_3"></div>
+                  </a></li>
+                <li class="col-6 no1"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li2/list2_4.jpg" alt="list2_4"></div>
+                  </a></li>
+                <li class="col-6 no1"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li2/list2_5.jpg" alt="list2_5"></div>
+                  </a></li>
+                <li class="col-6 no1"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li2/list2_6.jpg" alt="list2_6"></div>
+                  </a></li>
+                <li class="col-6 no2"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li3/list3_1.jpg" alt="list3_1"></div>
+                  </a></li>
+                <li class="col-6 no2"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li3/list3_2.jpg" alt="list3_2"></div>
+                  </a></li>
+                <li class="col-6 no2"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li3/list3_3.jpg" alt="list3_3"></div>
+                  </a></li>
+                <li class="col-6 no2"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li3/list3_4.jpg" alt="list3_4"></div>
+                  </a></li>
+                <li class="col-6 no2"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li3/list3_5.jpg" alt="list3_5"></div>
+                  </a></li>
+                <li class="col-6 no2"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li3/list3_6.jpg" alt="list3_6"></div>
+                  </a></li>
+                <li class="col-6 no3"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li4/list4_1.jpg" alt="list4_1"></div>
+                  </a></li>
+                <li class="col-6 no3"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li4/list4_2.jpg" alt="list4_2"></div>
+                  </a></li>
+                <li class="col-6 no3"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li4/list4_3.jpg" alt="list4_3"></div>
+                  </a></li>
+                <li class="col-6 no3"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li4/list4_4.jpg" alt="list4_4"></div>
+                  </a></li>
+                <li class="col-6 no3"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li4/list4_5.jpg" alt="list4_5"></div>
+                  </a></li>
+                <li class="col-6 no3"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li4/list4_6.jpg" alt="list4_6"></div>
+                  </a></li>
+                <li class="col-6 no4"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li5/list5_1.jpg" alt="list5_1"></div>
+                  </a></li>
+                <li class="col-6 no4"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li5/list5_2.png" alt="list5_2"></div>
+                  </a></li>
+                <li class="col-6 no4"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li5/list5_3.jpg" alt="list5_3"></div>
+                  </a></li>
+                <li class="col-6 no4"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li5/list5_4.jpg" alt="list5_4"></div>
+                  </a></li>
+                <li class="col-6 no4"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li5/list5_5.jpg" alt="list5_5"></div>
+                  </a></li>
+                <li class="col-6 no4"><a href="#none">
+                    <div><img src="./instagramimg_product/product/li5/list5_6.jpg" alt="list5_6"></div>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <ul class="row mx-0" data-number="">
-              <li class="col-6 no0"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li1/list1_1.jpg" alt="list1_1"></div>
-                </a></li>
-              <li class="col-6 no0"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li1/list1_2.jpg" alt="list1_2"></div>
-                </a></li>
-              <li class="col-6 no0"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li1/list1_3.jpg" alt="list1_3"></div>
-                </a></li>
-              <li class="col-6 no0"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li1/list1_4.jpg" alt="list1_4"></div>
-                </a></li>
-              <li class="col-6 no0"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li1/list1_5.jpg" alt="list1_5"></div>
-                </a></li>
-              <li class="col-6 no0"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li1/list1_6.jpg" alt="list1_6"></div>
-                </a></li>
-              <li class="col-6 no1"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li2/list2_1.jpg" alt="list2_1"></div>
-                </a></li>
-              <li class="col-6 no1"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li2/list2_2.jpg" alt="list2_2"></div>
-                </a></li>
-              <li class="col-6 no1"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li2/list2_3.png" alt="list2_3"></div>
-                </a></li>
-              <li class="col-6 no1"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li2/list2_4.jpg" alt="list2_4"></div>
-                </a></li>
-              <li class="col-6 no1"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li2/list2_5.jpg" alt="list2_5"></div>
-                </a></li>
-              <li class="col-6 no1"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li2/list2_6.jpg" alt="list2_6"></div>
-                </a></li>
-              <li class="col-6 no2"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li3/list3_1.jpg" alt="list3_1"></div>
-                </a></li>
-              <li class="col-6 no2"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li3/list3_2.jpg" alt="list3_2"></div>
-                </a></li>
-              <li class="col-6 no2"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li3/list3_3.jpg" alt="list3_3"></div>
-                </a></li>
-              <li class="col-6 no2"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li3/list3_4.jpg" alt="list3_4"></div>
-                </a></li>
-              <li class="col-6 no2"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li3/list3_5.jpg" alt="list3_5"></div>
-                </a></li>
-              <li class="col-6 no2"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li3/list3_6.jpg" alt="list3_6"></div>
-                </a></li>
-              <li class="col-6 no3"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li4/list4_1.jpg" alt="list4_1"></div>
-                </a></li>
-              <li class="col-6 no3"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li4/list4_2.jpg" alt="list4_2"></div>
-                </a></li>
-              <li class="col-6 no3"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li4/list4_3.jpg" alt="list4_3"></div>
-                </a></li>
-              <li class="col-6 no3"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li4/list4_4.jpg" alt="list4_4"></div>
-                </a></li>
-              <li class="col-6 no3"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li4/list4_5.jpg" alt="list4_5"></div>
-                </a></li>
-              <li class="col-6 no3"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li4/list4_6.jpg" alt="list4_6"></div>
-                </a></li>
-              <li class="col-6 no4"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li5/list5_1.jpg" alt="list5_1"></div>
-                </a></li>
-              <li class="col-6 no4"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li5/list5_2.png" alt="list5_2"></div>
-                </a></li>
-              <li class="col-6 no4"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li5/list5_3.jpg" alt="list5_3"></div>
-                </a></li>
-              <li class="col-6 no4"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li5/list5_4.jpg" alt="list5_4"></div>
-                </a></li>
-              <li class="col-6 no4"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li5/list5_5.jpg" alt="list5_5"></div>
-                </a></li>
-              <li class="col-6 no4"><a href="#none">
-                  <div><img src="./instagramimg_product/product/li5/list5_6.jpg" alt="list5_6"></div>
-                </a></li>
+      <section id="section-instagram" class="container">
+        <h2>INSTAGRAM후기</h2>
+        <div class="istagramMain"><img src="./instagramimg_product/instagram/instagramMain.png" alt=""></div>
+        <div class="d-flex insta">
+          <div class="swiper instagroup1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram1.jpg"
+                    alt="인스타후기사진1"></a>
+              </div>
+              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram2.jpg"
+                    alt="인스타후기사진2"></a>
+              </div>
+              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram3.jpg"
+                    alt="인스타후기사진3"></a>
+              </div>
+              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram4.jpg"
+                    alt="인스타후기사진4"></a>
+              </div>
+              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram5.jpg"
+                    alt="인스타후기사진5"></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper instagroup2 hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram6.jpg"
+                    alt="인스타후기사진6"></a>
+              </div>
+              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram7.jpg"
+                    alt="인스타후기사진7"></a>
+              </div>
+              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram8.jpg"
+                    alt="인스타후기사진8"></a>
+              </div>
+              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram9.jpg"
+                    alt="인스타후기사진9"></a>
+              </div>
+              <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram10.jpg"
+                    alt="인스타후기사진10"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </section>
+        
+
+    </main>
+    <footer id="ft">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h2>
+          <a href="">
+            <img src="./img/petfoodlogo.png" alt="">
+          </a>
+        </h2>
+        <ul class="info d-flex justify-content-between">
+          <li>COMPANY INFO
+            <ul>
+              <li>㈜ 하림펫푸드</li>
+              <li>대표 : 민동기</li>
+              <li>충청남도 공주시 정안면 정안농공단지길 32-111</li>
+              <li>사업자 등록 번호 : 240-81-00698</li>
+              <li>통신판매업 신고 제 2017-충남공주-0042호</li>
+              <li>개인정보관리책임자 : 조준형</li>
+              <li>FAX : 02-6933-4402</li>
+            </ul>
+          </li>
+          <li>CUSTOMER CENTER
+            <ul>
+              <li>080-850-0085</li>
+              <li>Open : AM 09:00 ~ PM 05:00</li>
+              <li>Lunch : PM 12:00 ~ PM 01:00</li>
+              <li>토,일,공휴일 휴무</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="flex-box position-relative">
+          <div class="family position-absolute">
+            <button>Familysite</button>
+            <ul class="position-absolute">
+              <li><a href="">(주)하림</a></li>
+              <li><a href="">하림몰</a></li>
+              <li><a href="">선진</a></li>
+              <li><a href="">팜스코</a></li>
+              <li><a href="">주원산오리</a></li>
+              <li><a href="">NS홈쇼핑</a></li>
+              <li><a href="">맥시칸치킨</a></li>
+              <li><a href="">디디치킨</a></li>
+            </ul>
+          </div>
+          <div class="website">
+            <ul class="row ">
+              <li class="col-6"><a href="">우리의 이야기</a></li>
+              <li class="col-6"><a href="">이용약관</a></li>
+              <li class="col-6"><a href="">개인정보처리방침</a></li>
+              <li class="col-6"><a href="">사업자정보확인</a></li>
             </ul>
           </div>
         </div>
       </div>
-    </section>
-    <section id="section-instagram" class="container">
-      <h2>INSTAGRAM후기</h2>
-      <div class="istagramMain"><img src="./instagramimg_product/instagram/instagramMain.png" alt=""></div>
-      <div class="d-flex insta">
-        <div class="swiper instagroup1">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram1.jpg"
-                  alt="인스타후기사진1"></a>
-            </div>
-            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram2.jpg"
-                  alt="인스타후기사진2"></a>
-            </div>
-            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram3.jpg"
-                  alt="인스타후기사진3"></a>
-            </div>
-            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram4.jpg"
-                  alt="인스타후기사진4"></a>
-            </div>
-            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram5.jpg"
-                  alt="인스타후기사진5"></a>
-            </div>
-          </div>
-        </div>
-        <div class="swiper instagroup2 hidden">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram6.jpg"
-                  alt="인스타후기사진6"></a>
-            </div>
-            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram7.jpg"
-                  alt="인스타후기사진7"></a>
-            </div>
-            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram8.jpg"
-                  alt="인스타후기사진8"></a>
-            </div>
-            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram9.jpg"
-                  alt="인스타후기사진9"></a>
-            </div>
-            <div class="swiper-slide"><a href="#none"><img src="./instagramimg_product/instagram/instagram10.jpg"
-                  alt="인스타후기사진10"></a>
-            </div>
-          </div>
-        </div>
+      <div class="container d-flex justify-content-end align-items-center">
+        <ul class="icon d-flex justify-content-end">
+          <li class="facebook"><a href=""></a></li>
+          <li class="ins"><a href=""></a></li>
+          <li class="youtub"><a href=""></a></li>
+        </ul>
       </div>
+    </footer>
 
-    </section>
-  </main>
-</body>
+   
+
+  </body>
 
 </html>
