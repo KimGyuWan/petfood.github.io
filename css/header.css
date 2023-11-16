@@ -28,6 +28,7 @@
   height: 2px;
   background-color: #da291c;
   transition: 0.5s;
+  bottom: 0;
 }
 
 #gnb a:hover:after,
