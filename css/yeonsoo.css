@@ -156,7 +156,7 @@ body * {
 /* line-banner */
 
 #line-banner .container {
-  margin-top: -2rem;
+  margin-top: -8rem;
   z-index: 100;
   background-color: #fff;
   padding: 0 5rem;

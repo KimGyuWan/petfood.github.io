@@ -1,0 +1,88 @@
+.d-inlineblock {
+  display: inline-block;
+}
+
+.position-rel {
+  position: relative;
+}
+
+.position-abs {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-stiky {
+  position: sticky;
+}
+
+.justifycontent-spacebetween {
+  justify-content: space-between;
+}
+
+.alignitems-center {
+  align-items: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* brand */
+#section-brand {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#section-brand img {
+  transform: translateX(100px);
+}
+
+#section-brand h1 {
+  color: black;
+  text-align: center;
+
+}
+
+#section-brand h2 {
+  text-align: center;
+  color: red;
+  margin-bottom: 20px;
+}
+
+#section-brand .sh {
+  margin: 20px;
+}
+
+#section-brand .dp {
+  text-align: center;
+}
+
+#section-brand .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-brand #mainSwiper .swiper-slide .sh {
+  font-size: 24px;
+  transform: translateY(50%);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#section-brand #mainSwiper .swiper-slide-active .sh {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+#section-brand .swiper-button-prev,
+#section-brand .swiper-button-next {
+  top: 40%;
+  color: black;
+}
+
+#line-banner {
+  padding: 100px 0;
+}

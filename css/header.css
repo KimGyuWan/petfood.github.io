@@ -1,3 +1,7 @@
+.w-0 {
+  width: 0;
+}
+
 #hd a {
   text-decoration: none;
 }
@@ -6,9 +10,6 @@
   transition: .5s;
   font-size: 0.85em;
 }
-
-
-#gnb {}
 
 #gnb a {
   transition: 0.5s;
@@ -38,8 +39,6 @@
 #gnb a.on {
   color: #da291c !important
 }
-
-
 
 #popup {
   width: 50px;
@@ -74,13 +73,11 @@
 
 #family.show ul {
   display: block;
-
 }
 
 #family a {
   color: black;
   line-height: 25px;
-
 }
 
 #family {
@@ -92,7 +89,7 @@
 }
 
 .scroll #hd {
-  transform: translateY(-28px);
+  transform: translateY(-36px);
 }
 
 #hd {
