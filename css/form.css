@@ -4,7 +4,9 @@
   justify-content: center;
 }
 
-#formhd {
+#form {
+  background-color: #E86962;
+  padding: 80px 0;
 }
 
 #formBox {
@@ -16,11 +18,12 @@
   margin-bottom: 0;
 }
 
-#form {
+#sectionForm {
   position: relative;
-  height: 800px;
-  background: url(../image/form0.jpg);
-  background-size: cover;
+  width: auto;
+  height: auto;
+  background: url(../img/dongmin/form0.jpg) center no-repeat;
+  /* background-size: cover; */
   color: white;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
@@ -51,7 +54,7 @@
   font-weight: 300;
 }
 
-#form .input:focus {
+#form input:focus {
   outline: none;
 }
 
@@ -74,7 +77,6 @@
 }
 
 #form .text {
-  left: 15px;
   margin: 10px 0;
 }
 
@@ -140,4 +142,22 @@ span {
 [type="radio"]:disabled+span {
   opacity: 0.7;
   cursor: not-allowed;
+}
+
+#form textarea {
+  background-color: #8b8b8b1c;
+  resize: none;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+}
+
+#form textarea::placeholder {
+  color: white;
+}
+
+#formhd h2,
+#formhd p {
+  margin-left: 130px;
 }

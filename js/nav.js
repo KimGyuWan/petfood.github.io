@@ -52,7 +52,6 @@ window.addEventListener("load", function () {
   })
 
 
-
   let familyTag = "";
   familyTag += `
         <button>${familyInfo.button}</button>

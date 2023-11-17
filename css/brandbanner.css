@@ -33,19 +33,20 @@
 /* brand */
 #section-brand {
   font-family: 'Noto Sans KR', sans-serif;
+  padding-bottom: 50px;
 }
 
 #section-brand img {
   transform: translateX(100px);
 }
 
-#section-brand h1 {
+#section-brand h2 {
   color: black;
   text-align: center;
-
+  margin-bottom: 50px;
 }
 
-#section-brand h2 {
+#section-brand h3 {
   text-align: center;
   color: red;
   margin-bottom: 20px;
@@ -80,7 +81,12 @@
 #section-brand .swiper-button-prev,
 #section-brand .swiper-button-next {
   top: 40%;
-  color: black;
+  color: #da291c;
+}
+
+#section-brand .swiper-button-prev::after,
+#section-brand .swiper-button-next::after {
+  font-size: 4rem;
 }
 
 #line-banner {

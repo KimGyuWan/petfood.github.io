@@ -9,7 +9,6 @@
   height: 700px;
   display: flex;
   position: relative;
-  left: 100px;
   /* 왼쪽 메인 사진 계산해야함 */
 }
 
@@ -24,21 +23,20 @@
 #section-instagram {
   position: relative;
   display: flex;
-  padding: 50px 0;
+  padding: 50px 200px;
   box-sizing: border-box;
 }
 
 #section-instagram .istagramMain img {
-  width: 450px;
+  width: 380px;
   height: auto;
   position: relative;
-  top: 13%;
-  left: 5%;
+  box-shadow: 0px 2px 18px 0px red;
 }
 
 #section-instagram h2 {
   position: relative;
-  left: 50px;
+  text-align: center;
 }
 
 @media (max-width: 991px) {

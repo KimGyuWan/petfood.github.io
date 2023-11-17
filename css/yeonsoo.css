@@ -1,3 +1,9 @@
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 /* common */
 .ir-hidden {
   text-indent: -999rem;
@@ -87,9 +93,7 @@ body * {
 
 #slide-banner .swiper-button-prev,
 #slide-banner .swiper-button-next {
-  left: unset;
   height: auto;
-  width: 5rem;
   top: 50%;
   transform: translate(0, -50%);
 }
@@ -172,6 +176,7 @@ body * {
 }
 
 #line-banner .container button {
+  margin-right: 1rem;
   background-color: #fff;
   color: #da291c;
   height: 3rem;
@@ -190,6 +195,12 @@ body * {
 
 #line-banner .container button:hover {
   transform: scale(1.5);
+}
+
+#line-banner .container .member:hover ul li {
+  color: #fff;
+  background-color: #da291c;
+  transition: 0.8s;
 }
 
 #line-banner .container ul li {
@@ -330,42 +341,42 @@ body * {
   width: 2.5rem;
   height: 2.5rem;
   display: block;
-  background-image: url(../img/facebooklogo.png);
+  background-image: url(../img/yeonsoo/facebooklogo.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #ft ul.icon li.ins>a {
-  background-image: url(../img/instalogo.png);
+  background-image: url(../img/yeonsoo/instalogo.png);
 }
 
 
 #ft ul.icon li.youtub>a {
-  background-image: url(../img/youtubelogo.png);
+  background-image: url(../img/yeonsoo/youtubelogo.png);
 }
 
 
-.active0 #slide-banner,
-.active0 #slide-banner .swiper-slide {
+.active0#slide-banner,
+.active0#slide-banner .swiper-slide {
   background-color: #6B7692;
 }
 
-.active1 #slide-banner,
-.active1 #slide-banner .swiper-slide {
+.active1#slide-banner,
+.active1#slide-banner .swiper-slide {
   background-color: #7AD2BA;
 }
 
-.active2 #slide-banner,
-.active2 #slide-banner .swiper-slide {
+.active2#slide-banner,
+.active2#slide-banner .swiper-slide {
   background-color: #EBE8D9;
 }
 
-.active3 #slide-banner,
-.active3 #slide-banner .swiper-slide {
+.active3#slide-banner,
+.active3#slide-banner .swiper-slide {
   background-color: #E0914E;
 }
 
-.active4 #slide-banner,
-.active4 #slide-banner .swiper-slide {
+.active4#slide-banner,
+.active4#slide-banner .swiper-slide {
   background-color: #3E6C61;
 }
