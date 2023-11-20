@@ -1,35 +1,3 @@
-.d-inlineblock {
-  display: inline-block;
-}
-
-.position-rel {
-  position: relative;
-}
-
-.position-abs {
-  position: absolute;
-}
-
-.position-fixed {
-  position: fixed;
-}
-
-.position-stiky {
-  position: sticky;
-}
-
-.justifycontent-spacebetween {
-  justify-content: space-between;
-}
-
-.alignitems-center {
-  align-items: center;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
 /* brand */
 #section-brand {
   font-family: 'Noto Sans KR', sans-serif;

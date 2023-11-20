@@ -5,12 +5,10 @@ window.addEventListener("load", function () {
     autoplay: {
       delay: 4000,
     },
-
     pagination: {
       el: '#slide-banner .swiper-pagination',
       clickable: true,
     },
-
     navigation: {
       nextEl: '#slide-banner .swiper-button-next',
       prevEl: '#slide-banner .swiper-button-prev',
@@ -24,7 +22,6 @@ window.addEventListener("load", function () {
         console.log(this)
       }
     }
-
   });
 
   var eventToggle = true;
@@ -32,11 +29,10 @@ window.addEventListener("load", function () {
   $(".toggle").click(function () {
     $(this).toggleClass("on");
     if (eventToggle) {
-      swiper.autoplay.stop();
+      eventswiper.autoplay.stop();
       toggle = false;
     } else {
-
-      swiper.autoplay.start();
+      eventswiper.autoplay.start();
       eventToggle = true;
     }
   })

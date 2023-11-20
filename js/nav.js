@@ -24,8 +24,6 @@ window.addEventListener("load", function () {
   // 3. <a href="#kr" class="on">한국어</a>
   console.log(`<a href="${familyInfo.subList[0].href}" class="${familyInfo.subList[0].activeClass}">${familyInfo.subList[0].text}</a>`);
 
-
-
   // for (x in familyInfo.subList) {
   //   console.log(familyInfo.subList[x].text);
   // }
@@ -38,7 +36,6 @@ window.addEventListener("load", function () {
       $("body, html").stop(true, true).animate({ scrollTop: $(targetSection).offset().top }) //그리고 여기서 $(변수)를 해주는 순간 문자열에서 객체로 변한다
       $("#gnb a").removeClass('on')
       $(this).addClass('on')
-
 
     })
 
