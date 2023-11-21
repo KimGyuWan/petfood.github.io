@@ -26,15 +26,15 @@
 }
 
 
-#ft .info>li {
+#ft .info h4 {
   font-size: 1.5rem;
 }
 
-#ft .info>li+li {
+#ft .info div+div {
   margin-left: 5rem;
 }
 
-#ft .info>li>ul {
+#ft .info p {
   font-size: 0.8rem;
 }
 
