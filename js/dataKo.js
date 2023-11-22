@@ -42,32 +42,46 @@ const langKo = {
     {
       h3: "반짝 배송 OPEN",
       p: "오늘 주문, 반짝하면 새벽 도착!",
-      href: ""
+      href: "",
+      src: "./img/yeonsoo/slide1.png",
+      alt: "슬라이드1",
+      cls: "title-box position-absolute title-left"
     },
     {
       h3: "설레는 봄 | 할인해 봄",
       p: "봄맞이 최대 50% 할인 혜택 받으세요",
-      href: ""
+      href: "",
+      src: "./img/yeonsoo/slide2.png",
+      alt: "슬라이드2",
+      cls: "title-box position-absolute title-left"
     },
     {
-      h3: "신선함이 가득한<br />당일생산",
-      p: "하림펫푸드는 사료가 아니다<br />음식이다",
-      href: ""
+      h3: "신선함이 가득한 | 당일생산",
+      p: "하림펫푸드는 사료가 아니다 | 음식이다",
+      href: "",
+      src: "./img/yeonsoo/slide3.png",
+      alt: "슬라이드3",
+      cls: "title-box position-absolute title-black title-left"
     },
     {
-      h3: "하림펫푸드는<br />사료가 아니다 음식이다",
-      p: "#하림팻푸드 댕냥이 동안선발대회<br />반려동물 자랑도 하고 간식도 받고!",
-      href: ""
+      h3: "댕냥이 | 동안 선발대회",
+      p: "#하림팻푸드 댕냥이 동안선발대회 | 반려동물 자랑도 하고 간식도 받고!",
+      href: "",
+      src: "./img/yeonsoo/slide4.png",
+      alt: "슬라이드4",
+      cls: "title-box position-absolute title-right"
     },
     {
-      h3: "멍이냥이얌얌<br />리뷰 EVENT",
-      p: "하림펫푸드 제품 리뷰 작성시<br />추첨을 통해 간식 샘플 증정",
-      href: ""
+      h3: "멍이냥이얌얌 | 리뷰 EVENT",
+      p: "하림펫푸드 제품 리뷰 작성시 | 추첨을 통해 간식 샘플 증정",
+      href: "",
+      src: "./img/yeonsoo/slide5.png",
+      alt: "슬라이드5",
+      cls: "title-box position-absolute title-right"
     },
   ],
   linebanner: {
-    h2: "GOLD MEMBER 골드멤버8가지혜택",
-    i: [
+    icon: [
       {
         cls: "bi bi-plus",
         span: "어린이날/크리스마스 연2회선물"
@@ -415,7 +429,7 @@ const langKo = {
       },
       {
         nm: "하림몰",
-        href: "https://harimmall.com/"
+        href: "https://www.harimmall.com/"
       },
       {
         nm: "선진",
@@ -431,7 +445,7 @@ const langKo = {
       },
       {
         nm: "NS홈쇼핑",
-        href: "http://nsmall.com/"
+        href: "http://www.nsmall.com/"
       },
       {
         nm: "맥시칸치킨",
@@ -471,10 +485,50 @@ window.addEventListener("load", function () {
   let sectioninstagramTag = "";
   let footerTag = "";
 
+  // topbanner 추출하기
+
   for (x in langKo.topad) {
-    topadTag += `<a href="${langKo.topad[x].href} class="${langKo.topad[x].cls}">${langKo.topad[x].nm}</a>`;
+    topadTag += `<a href="${langKo.topad[x].href}" class="text-white ${langKo.topad[x].cls}">${langKo.topad[x].nm}</a>`;
     console.log(topadTag);
   }
 
   document.querySelector("#topbanner").innerHTML = topadTag;
+
+  // gnb 추출하기
+
+  for (x in langKo.gnb) {
+    gnbTag += `<li class="px-3"><a href="${langKo.gnb[x].href}" class="${langKo.gnb[x].cls}">${langKo.gnb[x].nm}</a></li>`;
+  }
+
+  document.querySelector("#gnb").innerHTML = gnbTag;
+
+  // sliddebanner 추출하기
+
+  // for (x in langKo.slidebanner) {
+  //   slidebannerTag += `<a href="${langKo.slidebanner[x].href}"><div class="${langKo.slidebanner[x].cls}">
+  //   <h3>${langKo.slidebanner[x].h3}</h3><p>${langKo.slidebanner[x].p}</p></div>
+  //   <img src="${langKo.slidebanner[x].src}" alt="${langKo.slidebanner[x].alt}"></a>`;
+  // }
+
+  // document.querySelector("#slide-banner .swiper-wrapper").innerHTML = slidebannerTag;
+
+  $("#slide-banner .swiper-slide").each(function () {
+    $(this).html(
+      `<a href="${langKo.slidebanner[$(this).index()].href}"><div class="${langKo.slidebanner[$(this).index()].cls}">
+        <h3>${langKo.slidebanner[$(this).index()].h3}</h3><p>${langKo.slidebanner[$(this).index()].p}</p></div>
+        <img src="${langKo.slidebanner[$(this).index()].src}" alt="${langKo.slidebanner[$(this).index()].alt}">
+        </a>`
+    )
+  })
+
+  // linebanner 추출하기
+
+  for (x in langKo.linebanner) {
+    linebannerTag += `<li class="position-relative"><i class="${langKo.linebanner.icon[x].cls}">
+    <span class="ir-hidden">${langKo.linebanner.icon[x].span}</span></li>`;
+  }
+
+  document.querySelector("#line-banner ul").innerHTML = linebannerTag;
+
+
 })

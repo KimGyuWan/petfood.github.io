@@ -23,6 +23,7 @@ window.addEventListener("load", function () {
       }
     }
   });
+  // swiper.update();
 
   var eventToggle = true;
 
