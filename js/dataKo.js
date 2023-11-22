@@ -81,6 +81,7 @@ const langKo = {
     },
   ],
   linebanner: {
+    h2: "GOLD MEMBER | 골드멤버8가지혜택",
     icon: [
       {
         cls: "bi bi-plus",
@@ -480,7 +481,9 @@ window.addEventListener("load", function () {
   let gnbTag = "";
   let slidebannerTag = "";
   let linebannerTag = "";
+  let linebannerText = "";
   let sectionbrandTag = "";
+  let sectionbrandText = "";
   let sectionitemTag = "";
   let sectioninstagramTag = "";
   let footerTag = "";
@@ -523,12 +526,34 @@ window.addEventListener("load", function () {
 
   // linebanner 추출하기
 
-  for (x in langKo.linebanner) {
+  for (x in langKo.linebanner.icon) {
     linebannerTag += `<li class="position-relative"><i class="${langKo.linebanner.icon[x].cls}">
-    <span class="ir-hidden">${langKo.linebanner.icon[x].span}</span></li>`;
+    <span class="ir-hidden">${langKo.linebanner.icon[x].span}</span></i></li>`;
   }
 
+  linebannerText += `${langKo.linebanner.h2}`;
+
+  document.querySelector("#line-banner h2").innerHTML = linebannerText;
   document.querySelector("#line-banner ul").innerHTML = linebannerTag;
 
+
+  // sectionbrand 추출하기
+
+  $("#section-brand .swiper-slide").each(function () {
+    $(this).html(
+      `<h3>${langKo.sectionbrand.brandlist[$(this).index()].h3}</h3>
+                <div class="dp postion-rel">
+                  <p>보통 사료는 나쁜 냄새가 많이 나지만 <br>하림펫푸드는 생고기와 야채 등신선한 재료로만 만들어 <br>재료 본연의 고소한 향을 느낄 수
+                    있습니다.
+                  </p>
+                </div>
+              </div>
+              <img src="./img/dongmin/form1.gif">`
+    )
+  })
+  
+  sectionbrandText += `${langKo.sectionbrand.h2}`;
+
+  document.querySelector("#section-brand h2").innerHTML = sectionbrandText;
 
 })
