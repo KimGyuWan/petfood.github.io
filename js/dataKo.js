@@ -459,24 +459,21 @@ const langKo = {
   }
 }
 
-let topadTag = "";
-let gnbTag = "";
-let slidebannerTag = "";
-let linebannerTag = "";
-let sectionbrandTag = "";
-let sectionitemTag = "";
-let sectioninstagramTag = "";
-let footerTag = "";
 
 
 window.addEventListener("load", function () {
-  for (x of langKo) {
-    let obj = "";
-    obj += x;
-    console.log(obj)
-    for (y in langKo) {
-      topadTag += `<a href="${langKo.obj[y].href} class="${langKo.obj[y].cls}">${langKo.obj[y].nm}</a>`;
-    }
+  let topadTag = "";
+  let gnbTag = "";
+  let slidebannerTag = "";
+  let linebannerTag = "";
+  let sectionbrandTag = "";
+  let sectionitemTag = "";
+  let sectioninstagramTag = "";
+  let footerTag = "";
+
+  for (x in langKo.topad) {
+    topadTag += `<a href="${langKo.topad[x].href} class="${langKo.topad[x].cls}">${langKo.topad[x].nm}</a>`;
+    console.log(topadTag);
   }
 
   document.querySelector("#topbanner").innerHTML = topadTag;
