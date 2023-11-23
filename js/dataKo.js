@@ -182,37 +182,37 @@ const langKo = {
     ],
     listgroup: [
       {
-        cls: "col-6 no0",
+        cls: "col-6 no0 d-block",
         href: "#none",
         src: "./img/gyuwan/product/li1/list1_1.jpg",
         alt: "list1_1"
       },
       {
-        cls: "col-6 no0",
+        cls: "col-6 no0 d-block",
         href: "#none",
         src: "./img/gyuwan/product/li1/list1_2.jpg",
         alt: "list1_2"
       },
       {
-        cls: "col-6 no0",
+        cls: "col-6 no0 d-block",
         href: "#none",
         src: "./img/gyuwan/product/li1/list1_3.jpg",
         alt: "list1_3"
       },
       {
-        cls: "col-6 no0",
+        cls: "col-6 no0 d-block",
         href: "#none",
         src: "./img/gyuwan/product/li1/list1_4.jpg",
         alt: "list1_4"
       },
       {
-        cls: "col-6 no0",
+        cls: "col-6 no0 d-block",
         href: "#none",
         src: "./img/gyuwan/product/li1/list1_5.jpg",
         alt: "list1_5"
       },
       {
-        cls: "col-6 no0",
+        cls: "col-6 no0 d-block",
         href: "#none",
         src: "./img/gyuwan/product/li1/list1_6.jpg",
         alt: "list1_6"
@@ -232,7 +232,7 @@ const langKo = {
       {
         cls: "col-6 no1",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list2_3.jpg",
+        src: "./img/gyuwan/product/li2/list2_3.png",
         alt: "list2_3"
       },
       {
@@ -256,109 +256,109 @@ const langKo = {
       {
         cls: "col-6 no2",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list3_1.jpg",
+        src: "./img/gyuwan/product/li3/list3_1.jpg",
         alt: "list3_1"
       },
       {
         cls: "col-6 no2",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list3_2.jpg",
+        src: "./img/gyuwan/product/li3/list3_2.jpg",
         alt: "list3_2"
       },
       {
         cls: "col-6 no2",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list3_3.jpg",
+        src: "./img/gyuwan/product/li3/list3_3.jpg",
         alt: "list3_3"
       },
       {
         cls: "col-6 no2",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list3_4.jpg",
+        src: "./img/gyuwan/product/li3/list3_4.jpg",
         alt: "list3_4"
       },
       {
         cls: "col-6 no2",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list3_5.jpg",
+        src: "./img/gyuwan/product/li3/list3_5.jpg",
         alt: "list3_5"
       },
       {
         cls: "col-6 no2",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list3_6.jpg",
+        src: "./img/gyuwan/product/li3/list3_6.jpg",
         alt: "list3_6"
       },
       {
         cls: "col-6 no3",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list4_1.jpg",
+        src: "./img/gyuwan/product/li4/list4_1.jpg",
         alt: "list4_1"
       },
       {
         cls: "col-6 no3",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list4_2.jpg",
+        src: "./img/gyuwan/product/li4/list4_2.jpg",
         alt: "list4_2"
       },
       {
         cls: "col-6 no3",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list4_3.jpg",
+        src: "./img/gyuwan/product/li4/list4_3.jpg",
         alt: "list4_3"
       },
       {
         cls: "col-6 no3",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list4_4.jpg",
+        src: "./img/gyuwan/product/li4/list4_4.jpg",
         alt: "list4_4"
       },
       {
         cls: "col-6 no3",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list4_5.jpg",
+        src: "./img/gyuwan/product/li4/list4_5.jpg",
         alt: "list4_5"
       },
       {
         cls: "col-6 no3",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list4_6.jpg",
+        src: "./img/gyuwan/product/li4/list4_6.jpg",
         alt: "list4_6"
       },
       {
         cls: "col-6 no4",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list5_1.jpg",
+        src: "./img/gyuwan/product/li5/list5_1.jpg",
         alt: "list5_1"
       },
       {
         cls: "col-6 no4",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list5_2.jpg",
+        src: "./img/gyuwan/product/li5/list5_2.png",
         alt: "list5_2"
       },
       {
         cls: "col-6 no4",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list5_3.jpg",
+        src: "./img/gyuwan/product/li5/list5_3.jpg",
         alt: "list5_3"
       },
       {
         cls: "col-6 no4",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list5_4.jpg",
+        src: "./img/gyuwan/product/li5/list5_4.jpg",
         alt: "list5_4"
       },
       {
         cls: "col-6 no4",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list5_5.jpg",
+        src: "./img/gyuwan/product/li5/list5_5.jpg",
         alt: "list5_5"
       },
       {
         cls: "col-6 no4",
         href: "#none",
-        src: "./img/gyuwan/product/li2/list5_6.jpg",
+        src: "./img/gyuwan/product/li5/list5_6.jpg",
         alt: "list5_6"
       },
     ]
@@ -581,4 +581,10 @@ window.addEventListener("load", function () {
   }
 
   document.querySelector(".listgroup ul").innerHTML = sectionitemList;
+
+  // sectioninstagram 추출하기
+
+
+
+
 })

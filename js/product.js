@@ -1,15 +1,19 @@
-window.addEventListener("load", function () {
-  $("#section-item .tap a").on("click", function (e) {
+$(document).ready(function () {
+  $("body").on("click", "#section-item .tap a", function (e) {
     e.preventDefault();
-    $("#section-item .tap").removeClass("active");
-    $(this).parent("#section-item .tap").addClass("active");
 
+    var pnum = $(this).parent().index();
     var targetnum = $(this).attr('href');
 
-    $("#section-item .listgroup .row li").removeClass("d-block");
-    $(targetnum).addClass("d-block");
+    taba(pnum, targetnum);
+
   });
 
-  $("#section-item .tap").eq(0).find("a").click();
+  function taba(idx, cls) {
+    $("#section-item .tap").removeClass("active");
+    $("#section-item .tap").eq(idx).addClass("active");
 
+    $("#section-item .listgroup .row li").removeClass("d-block");
+    $("#section-item .listgroup .row li" + cls).addClass("d-block");
+  }
 })
