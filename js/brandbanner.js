@@ -5,10 +5,10 @@ window.addEventListener("load", function () {
       nextEl: '#mainSwiper  .swiper-button-next',
       prevEl: '#mainSwiper  .swiper-button-prev',
     },
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 4000,
+    //   disableOnInteraction: false,
+    // },
 
   });
 

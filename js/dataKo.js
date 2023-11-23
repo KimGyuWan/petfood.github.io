@@ -122,31 +122,31 @@ const langKo = {
     brandlist: [
       {
         h3: "하림펫푸드의 신선도는 | 냄새로 확인할 수 있습니다.",
-        p: "보통 사료는 나쁜 냄새가 많이 나지만 | 하림펫푸드는 생고기와 야채 등신선한 재료로만 만들어 | 재료 본연의 고소한 향을 느낄 수 있습니다.",
+        // p: "보통 사료는 나쁜 냄새가 많이 나지만 | 하림펫푸드는 생고기와 야채 등신선한 재료로만 만들어 | 재료 본연의 고소한 향을 느낄 수 있습니다.",
         src: "./img/dongmin/form1.gif",
         alt: "브랜드슬라이드1"
       },
       {
         h3: "하림펫푸드는 100% | 식품 등급으로 만듭니다.  ",
-        p: "보통 사료는 사람이 먹지 못하는 원료(육분 등)를 넣지만, | 하림펫푸드는 사람이 먹을 수 있는 생고기를 넣습니다.",
+        // p: "보통 사료는 사람이 먹지 못하는 원료(육분 등)를 넣지만, | 하림펫푸드는 사람이 먹을 수 있는 생고기를 넣습니다.",
         src: "./img/dongmin/form2.gif",
         alt: "브랜드슬라이드2"
       },
       {
         h3: "하림펫푸드는 | 합성 보존제를 첨가하지 않습니다. ",
-        p: "뜨겁고 습한 적도를 건너오는 사료의 경우  | 산패를 막기 위해방부제를 첨가합니다. | 하지만, 하림펫푸드는 어떠한 합성 보존제도 첨가하지 않았습니다.",
+        // p: "뜨겁고 습한 적도를 건너오는 사료의 경우  | 산패를 막기 위해방부제를 첨가합니다. | 하지만, 하림펫푸드는 어떠한 합성 보존제도 첨가하지 않았습니다.",
         src: "./img/dongmin/form3.gif",
         alt: "브랜드슬라이드3"
       },
       {
         h3: "하림펫푸드는 | 식품 생산 수준의 공장에서 만듭니다.",
-        p: "일반 가축용 사료를 만드는 사료공장과는 달리, | 우리는 첨단 설비와관리 시스템을 갖추고 | 식품 생산수준의 공장에서 직접 만듭니다.",
+        // p: "일반 가축용 사료를 만드는 사료공장과는 달리, | 우리는 첨단 설비와관리 시스템을 갖추고 | 식품 생산수준의 공장에서 직접 만듭니다.",
         src: "./img/dongmin/form4.gif",
         alt: "브랜드슬라이드4"
       },
       {
         h3: "신선함을 약속하는 시간, | 제조일자를 표기합니다. ",
-        p: "수입한 이후 소분 날짜와유통기한만 표기하지만, | 하림펫푸드는 더 안전하고 믿을 수 있도록 표기합니다.",
+        // p: "수입한 이후 소분 날짜와유통기한만 표기하지만, | 하림펫푸드는 더 안전하고 믿을 수 있도록 표기합니다.",
         src: "./img/dongmin/form5.gif",
         alt: "브랜드슬라이드5"
       },
@@ -482,16 +482,24 @@ const langKo = {
 
 
 window.addEventListener("load", function () {
-  let topadTag = "";
-  let gnbTag = "";
-  let slidebannerTag = "";
-  let linebannerTag = "";
+  let topadTag = ""; // 상단 이벤트 띠 배너
+
+  let gnbTag = ""; // 상단 navigation
+
+  let slidebannerTag = ""; // 이벤트 slide
+
+  let linebannerTag = ""; // 혜택 배너
   let linebannerText = "";
-  let sectionbrandTag = "";
+
+  let sectionbrandTag = ""; // 브랜드 설명 배너
   let sectionbrandText = "";
-  let sectionitemTag = "";
-  let sectioninstagramTag = "";
-  let footerTag = "";
+
+  let sectionitemTag = ""; // 아이템 리스트 배너
+  let sectionitemList = "";
+
+  let sectioninstagramTag = ""; // 인스타 후기 배너
+
+  let footerTag = ""; // footer 배너
 
   // topbanner 추출하기
 
@@ -547,7 +555,7 @@ window.addEventListener("load", function () {
   $("#section-brand .swiper-slide").each(function () {
     $(this).html(
       `<div class="sh position-relative"><h3>${langKo.sectionbrand.brandlist[$(this).index()].h3}</h3>
-      <div class="dp postion-rel"><p>${langKo.sectionbrand.brandlist[$(this).index()].p}</p>
+      <div class="dp"><p>${langKo.sectionbrand.brandlist[$(this).index()].p}</p>
       </div></div><img src="${langKo.sectionbrand.brandlist[$(this).index()].src}" 
       alt="${langKo.sectionbrand.brandlist[$(this).index()].alt}">`
     );
@@ -557,4 +565,20 @@ window.addEventListener("load", function () {
 
   document.querySelector("#section-brand h2").innerHTML = sectionbrandText;
 
+  // sectionitem 추출하기
+
+  for (x in langKo.sectionitem.mainlist) {
+    sectionitemTag += `<li class="${langKo.sectionitem.mainlist[x].cls}">
+    <a href="${langKo.sectionitem.mainlist[x].href}">${langKo.sectionitem.mainlist[x].nm}</a></li>`;
+  }
+
+  document.querySelector(".mainlist").innerHTML = sectionitemTag;
+
+  for (x in langKo.sectionitem.listgroup) {
+    sectionitemList += `<li class="${langKo.sectionitem.listgroup[x].cls}">
+    <a href="${langKo.sectionitem.listgroup[x].href}"><div>
+    <img src="${langKo.sectionitem.listgroup[x].src}" alt="${langKo.sectionitem.listgroup[x].alt}"></div></a></li>`;
+  }
+
+  document.querySelector(".listgroup ul").innerHTML = sectionitemList;
 })
