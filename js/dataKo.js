@@ -364,54 +364,46 @@ const langKo = {
     ]
   },
   sectioninstagram: {
-    instagroup: [
+    instagroup1: [
       {
-        href: "#none",
         src: "./img/gyuwan/instagram/instagram1.jpg",
         alt: "인스타후기사진1"
       },
       {
-        href: "#none",
         src: "./img/gyuwan/instagram/instagram2.jpg",
         alt: "인스타후기사진2"
       },
       {
-        href: "#none",
         src: "./img/gyuwan/instagram/instagram3.jpg",
         alt: "인스타후기사진3"
       },
       {
-        href: "#none",
         src: "./img/gyuwan/instagram/instagram4.jpg",
         alt: "인스타후기사진4"
       },
       {
-        href: "#none",
         src: "./img/gyuwan/instagram/instagram5.jpg",
         alt: "인스타후기사진5"
       },
+    ],
+    instagroup2: [
       {
-        href: "#none",
         src: "./img/gyuwan/instagram/instagram6.jpg",
         alt: "인스타후기사진6"
       },
       {
-        href: "#none",
         src: "./img/gyuwan/instagram/instagram7.jpg",
         alt: "인스타후기사진7"
       },
       {
-        href: "#none",
         src: "./img/gyuwan/instagram/instagram8.jpg",
         alt: "인스타후기사진8"
       },
       {
-        href: "#none",
         src: "./img/gyuwan/instagram/instagram9.jpg",
         alt: "인스타후기사진9"
       },
       {
-        href: "#none",
         src: "./img/gyuwan/instagram/instagram10.jpg",
         alt: "인스타후기사진10"
       },
@@ -466,14 +458,17 @@ const langKo = {
       {
         href: "",
         span: "페이스북",
+        cls: "facebook"
       },
       {
         href: "",
         span: "인스타그램",
+        cls: "ins"
       },
       {
         href: "",
         span: "유튜브",
+        cls: "youtub"
       },
     ]
   }
@@ -486,20 +481,17 @@ window.addEventListener("load", function () {
 
   let gnbTag = ""; // 상단 navigation
 
-  let slidebannerTag = ""; // 이벤트 slide
-
   let linebannerTag = ""; // 혜택 배너
   let linebannerText = "";
 
-  let sectionbrandTag = ""; // 브랜드 설명 배너
   let sectionbrandText = "";
 
   let sectionitemTag = ""; // 아이템 리스트 배너
   let sectionitemList = "";
 
-  let sectioninstagramTag = ""; // 인스타 후기 배너
-
-  let footerTag = ""; // footer 배너
+  let footerBox = ""; // footer 배너
+  let footerFamily = "";
+  let footerIcon = "";
 
   // topbanner 추출하기
 
@@ -584,7 +576,40 @@ window.addEventListener("load", function () {
 
   // sectioninstagram 추출하기
 
+  $("#section-instagram .instagroup1 .swiper-slide").each(function () {
+    $(this).html(
+      `<a href="#none"><img src="${langKo.sectioninstagram.instagroup1[$(this).index()].src}" 
+      alt="${langKo.sectioninstagram.instagroup1[$(this).index()].alt}"></a>`
+    )
+  })
+  $("#section-instagram .instagroup2 .swiper-slide").each(function () {
+    $(this).html(
+      `<a href="#none"><img src="${langKo.sectioninstagram.instagroup2[$(this).index()].src}" 
+      alt="${langKo.sectioninstagram.instagroup2[$(this).index()].alt}"></a>`
+    )
+  })
 
+  // footer 추출하기
 
+  for (x in langKo.footer.box) {
+    footerBox += `<div>
+    <h4>${langKo.footer.box[x].h4}</h4>
+    <p>${langKo.footer.box[x].p}</p>
+    </div>`;
+  }
 
+  document.querySelector("#ft .info").innerHTML = footerBox;
+
+  for (x in langKo.footer.family) {
+    footerFamily += `<li><a href="${langKo.footer.family[x].href}">${langKo.footer.family[x].nm}</a></li>`;
+  }
+
+  document.querySelector("#ft .family ul").innerHTML = footerFamily;
+
+  for (x in langKo.footer.tabicon) {
+    footerIcon += `<li class="${langKo.footer.tabicon[x].cls}"><a href="${langKo.footer.tabicon[x].href}">
+    <span class="ir-hidden">${langKo.footer.tabicon[x].span}</span></a></li>`;
+  }
+
+  document.querySelector("#ft .icon").innerHTML = footerIcon;
 })
