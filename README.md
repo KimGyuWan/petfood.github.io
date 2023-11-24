@@ -19,3 +19,6 @@
  - bootsstrap icon 1.11.1
  - swiper 11
  - jquery 2.2.4
+
+### github 페이지 연동 주소
+ * https://kimgyuwan.github.io/petfood.github.io/
