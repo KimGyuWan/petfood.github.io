@@ -18,3 +18,4 @@
  - bootstrap 4.6.2
  - bootsstrap icon 1.11.1
  - swiper 11
+ - jquery 2.2.4
