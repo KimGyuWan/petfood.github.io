@@ -474,24 +474,25 @@ const langKo = {
   }
 }
 
+let topadTag = ""; // 상단 이벤트 띠 배너
+
+let gnbTag = ""; // 상단 navigation
+
+let linebannerTag = ""; // 혜택 배너
+let linebannerText = "";
+
+let sectionbrandText = "";
+
+let sectionitemTag = ""; // 아이템 리스트 배너
+let sectionitemList = "";
+
+let footerBox = ""; // footer 배너
+let footerFamily = "";
+let footerIcon = "";
 
 
 window.addEventListener("load", function () {
-  let topadTag = ""; // 상단 이벤트 띠 배너
 
-  let gnbTag = ""; // 상단 navigation
-
-  let linebannerTag = ""; // 혜택 배너
-  let linebannerText = "";
-
-  let sectionbrandText = "";
-
-  let sectionitemTag = ""; // 아이템 리스트 배너
-  let sectionitemList = "";
-
-  let footerBox = ""; // footer 배너
-  let footerFamily = "";
-  let footerIcon = "";
 
   // topbanner 추출하기
 
