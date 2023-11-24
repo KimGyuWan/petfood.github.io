@@ -7,6 +7,9 @@
 ## Figma 주소
  * https://www.figma.com/file/EClovPOgwcn8n6xqLZsvIG/Untitled?type=design&node-id=0-1&mode=design&t=zBurrEKdbVizaZJe-0
 
+## github 페이지 연동 주소
+ * https://kimgyuwan.github.io/petfood.github.io/
+
 ## 멤버구성
  - 팀장  : 김규완 https://github.com/KimGyuWan
  - 팀원1 : 이연수 https://github.com/flxk202122
@@ -19,6 +22,3 @@
  - bootsstrap icon 1.11.1
  - swiper 11
  - jquery 2.2.4
-
-### github 페이지 연동 주소
- * https://kimgyuwan.github.io/petfood.github.io/
