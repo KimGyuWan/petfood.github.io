@@ -33,7 +33,7 @@ const langKo = {
   ],
 
   linebanner: {
-    h2: "GOLD MEMBER 골드멤버8가지혜택",
+    h2: "GOLD MEMBER | 골드멤버8가지혜택",
     i: [
       {
         cls: "bi bi-plus",
@@ -134,12 +134,31 @@ const langKo = {
 }
 
 
-$(document).ready(function () {
-  let linetag = "";
 
-  for (x in Linebanner) {
-    linetag += `<h2>${linebanner[x].h2}</h2>`
-    console.log("linetag");
+$(document).ready(function () {
+
+  let linebannerTag = ""; // 혜택 배너
+  let linebannerText = "";
+
+  let footerBox = ""; // footer 배너
+  let footerFamily = "";
+  let footerIcon = "";
+
+
+  //라인베너 제목
+  linebannerTag += `${langKo.linebanner.h2}`
+
+  //라인베너 8가지 혜택관리
+
+  for (x in langKo.linebanner.i) {
+    linebannerText += `<li class="position-relative">
+    <i class="${langKo.linebanner.i[x].cls}" class="ir-hidden">
+    <span class="ir-hidden">${langKo.linebanner.i[x].span}</span>
+    </i>
+    </li>`
   }
+
+  $("#line-banner h2").html(linebannerTag);
+  $("#line-banner .eight").html(linebannerText);
 
 })
