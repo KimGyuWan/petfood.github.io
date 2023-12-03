@@ -132,3 +132,14 @@ const langKo = {
     ]
   }
 }
+
+
+$(document).ready(function () {
+  let linetag = "";
+
+  for (x in Linebanner) {
+    linetag += `<h2>${linebanner[x].h2}</h2>`
+    console.log("linetag");
+  }
+
+})
