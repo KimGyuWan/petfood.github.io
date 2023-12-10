@@ -148,7 +148,17 @@ $(document).ready(function () {
   let footerIcon = "";
 
   //slide 
-
+  $("#slide-banner .swiper-slide").each(function () {
+    $(this).html(
+      `<a href="${langKo.slidebanner[$(this).index()].href}">
+      <img src="${langKo.slidebanner[$(this).index()].src}">
+      <div class="title-box position-absolute title-left">
+      <h3>${langKo.slidebanner[$(this).index()].h3}</h3>
+      <p>${langKo.slidebanner[$(this).index()].p}</p>
+      </div>
+      </a>`
+    )
+  })
 
   //line-banner title
   linebannerTag += `${langKo.linebanner.h2}`
