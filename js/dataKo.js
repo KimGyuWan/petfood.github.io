@@ -161,4 +161,16 @@ $(document).ready(function () {
   $("#line-banner h2").html(linebannerTag);
   $("#line-banner .eight").html(linebannerText);
 
+  //footer
+  for (x in langKo.footer.box) {
+    footerBox += `<div><h4>${langKo.footer.box[x].h4}</h4><p>${langKo.footer.box[x].p}</p></div>`
+  }
+
+  for (x in langKo.footer.family) {
+    footerFamily += `<li><a href="${langKo.footer.family[x].href}">${langKo.footer.family[x].nm}</a></li>`
+  }
+
+  $("#ft .info").html(footerBox);
+  $("#family-list").html(footerFamily);
+
 })
