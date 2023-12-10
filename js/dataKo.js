@@ -147,11 +147,13 @@ $(document).ready(function () {
   let footerFamily = "";
   let footerIcon = "";
 
+  //slide 
 
-  //라인베너 제목
+
+  //line-banner title
   linebannerTag += `${langKo.linebanner.h2}`
 
-  //라인베너 8가지 혜택관리
+  //line-banner 8
 
   for (x in langKo.linebanner.i) {
     linebannerText += `<li class="position-relative">
