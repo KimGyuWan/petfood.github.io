@@ -120,14 +120,17 @@ const langKo = {
       {
         href: "",
         span: "페이스북",
+        cls: "facebook"
       },
       {
         href: "",
         span: "인스타그램",
+        cls: "ins"
       },
       {
         href: "",
         span: "유튜브",
+        cls: "youtub"
       },
     ]
   }
@@ -170,7 +173,11 @@ $(document).ready(function () {
     footerFamily += `<li><a href="${langKo.footer.family[x].href}">${langKo.footer.family[x].nm}</a></li>`
   }
 
+  for (x in langKo.footer.tabicon) {
+    footerIcon += `<li class="langKo.footer.tabicon[x].cls"><a href="${langKo.footer.tabicon[x].href}"><span class="ir-hidden">${langKo.footer.tabicon[x].span}</span></a></li>`
+  }
+
   $("#ft .info").html(footerBox);
   $("#family-list").html(footerFamily);
-
+  $("#ft ul.icon").html(footerIcon);
 })
