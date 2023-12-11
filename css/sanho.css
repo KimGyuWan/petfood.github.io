@@ -37,7 +37,7 @@
     border-radius: 1rem;
     margin-right: 0.5rem;
     padding: 0 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 
 }
 
@@ -50,12 +50,12 @@
 
 }
 
-#csr.img-box img {
+#csr .img-box img {
     transition: 1.0s;
 }
 
-#csr.img-box:hover img {
-    transform: scale(1.05);
+#csr .img-box:hover img {
+    transform: scale(1.1);
 }
 
 #csr .container {
@@ -72,10 +72,18 @@
 
 #csr .csr-tag a:hover {
     background-color: #da291c;
-    transition: 1.0s;
+    transition: 0.5s;
     color: white;
 }
 
 #csr .img-box {
     border-radius: 1rem;
+}
+
+#csr .csr-tag {
+    flex-wrap: wrap;
+}
+
+#csr .csr-tag a {
+    margin-top: 0.7rem;
 }
