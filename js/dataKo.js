@@ -418,62 +418,37 @@ const langKo = {
         h3: "하림펫푸드, 반려동물과 함께하는 '펫푸드 공장 투어 프로그램' 재개 [멍멍냥냥]",
         href: "#none",
         src: "./img/sanho/csr-1.jpg",
-        csrtag : {
-                  firsta: "#해피댄스스튜디오",
-                  seconda: "#투어프로그램",
-                  thirda: "#개슐랭"
-                  }
+        csrtag : ["#해피댄스스튜디오",  "#투어프로그램", "#개슐랭"]
       },
       {
         h3: "펫푸드 사업부터 사회공헌까지 …지금은 펫휴머니제이션 시대",
         href: "#none",
         src: "./img/sanho/csr-2.jpg",
-        csrtag : {
-                  firsta: "#하림펫푸드",
-                  seconda: "#펫휴머지네이션",
-                  thirda:"#사회공헌"
-                  }
+        csrtag : ["#하림펫푸드", "#펫휴머지네이션", "#사회공헌"]
       },
       {
         h3: "하림펫푸드, 배우 이기우와 유기동물 사료 1톤 기부",
         href: "#none",
         src: "./img/sanho/csr-3.jpg",
-        csrtag : {
-                  firsta: "#배우이기우",
-                  seconda: "#유기동물",
-                  thirda: "#사회공헌",
-                  fourtha: "#더리얼사료"
-                  }
+        csrtag : ["#배우이기우","#유기동물","#사회공헌","#더리얼사료"]
       },
       {
         h3: "하림펫푸드, 반려동물과 함께하는 '펫푸드 공장 투어 프로그램' 재개 [멍멍냥냥]",
         href: "#none",
         src: "./img/sanho/csr-4.jpg",
-        csrtag : {
-                  firsta: "#멍비치",
-                  seconda: "#더리얼",
-                  thirda: "#여름이벤트"
-                  }
+        csrtag : ["#멍비치","#더리얼","#여름이벤트"]
       },
       {
         h3: "하림펫푸드, 반려동물과 함께하는 '펫푸드 공장 투어 프로그램' 재개 [멍멍냥냥]",
         href: "#none",
         src: "./img/sanho/csr-5.jpg",
-        csrtag : {
-                  firsta: "#휴먼그레이드",
-                  seconda: "#더리얼",
-                  thirda: "#AAFCO"
-                  }
+        csrtag : ["#휴먼그레이드","#더리얼","#AAFCO"]
       },
       {
         h3: "하림펫푸드, 반려동물과 함께하는 '펫푸드 공장 투어 프로그램' 재개 [멍멍냥냥]",
         href: "#none",
         src: "./img/sanho/csr-6.jpg",
-        csrtag : {
-                  firsta: "#리얼독퍼",
-                  seconda: "#100%휴먼그레이드",
-                  thirda: "#버거킹콜라보레이션"
-                  }
+        csrtag : ["#리얼독퍼","#100%휴먼그레이드","#버거킹콜라보레이션"]
       }
     ]
 
@@ -543,143 +518,44 @@ const langKo = {
   }
 }
 
-let topadTag = ""; // 상단 이벤트 띠 배너
 
-let gnbTag = ""; // 상단 navigation
-
-let linebannerTag = ""; // 혜택 배너
-let linebannerText = "";
-
-let sectionbrandText = "";
-
-let sectionitemTag = ""; // 아이템 리스트 배너
-let sectionitemList = "";
-
-let footerBox = ""; // footer 배너
-let footerFamily = "";
-let footerIcon = "";
+  //  뉴스 배너
 
 
-window.addEventListener("load", function () {
+$(document).ready(function(){
+
+let sectionCsrTag = "";  
 
 
-  // topbanner 추출하기
-
-  for (x in langKo.topad) {
-    topadTag += `<a href="${langKo.topad[x].href}" class="text-white ${langKo.topad[x].cls}">${langKo.topad[x].nm}</a>`;
-    console.log(topadTag);
-  }
-
-  document.querySelector("#topbanner").innerHTML = topadTag;
-
-  // gnb 추출하기
-
-  for (x in langKo.gnb) {
-    gnbTag += `<li class="px-3"><a href="${langKo.gnb[x].href}" class="${langKo.gnb[x].cls}">${langKo.gnb[x].nm}</a></li>`;
-  }
-
-  document.querySelector("#gnb").innerHTML = gnbTag;
-
-  // sliddebanner 추출하기
-
-  // for (x in langKo.slidebanner) {
-  //   slidebannerTag += `<a href="${langKo.slidebanner[x].href}"><div class="${langKo.slidebanner[x].cls}">
-  //   <h3>${langKo.slidebanner[x].h3}</h3><p>${langKo.slidebanner[x].p}</p></div>
-  //   <img src="${langKo.slidebanner[x].src}" alt="${langKo.slidebanner[x].alt}"></a>`;
-  // }
-
-  // document.querySelector("#slide-banner .swiper-wrapper").innerHTML = slidebannerTag;
-
-  $("#slide-banner .swiper-slide").each(function () {
-    $(this).html(
-      `<a href="${langKo.slidebanner[$(this).index()].href}"><div class="${langKo.slidebanner[$(this).index()].cls}">
-        <h3>${langKo.slidebanner[$(this).index()].h3}</h3><p>${langKo.slidebanner[$(this).index()].p}</p></div>
-        <img src="${langKo.slidebanner[$(this).index()].src}" alt="${langKo.slidebanner[$(this).index()].alt}">
-        </a>`
-    )
-  })
-
-  // linebanner 추출하기
-
-  for (x in langKo.linebanner.icon) {
-    linebannerTag += `<li class="position-relative"><i class="${langKo.linebanner.icon[x].cls}">
-    <span class="ir-hidden">${langKo.linebanner.icon[x].span}</span></i></li>`;
-  }
-
-  linebannerText += `${langKo.linebanner.h2}`;
-
-  document.querySelector("#line-banner h2").innerHTML = linebannerText;
-  document.querySelector("#line-banner ul").innerHTML = linebannerTag;
 
 
-  // sectionbrand 추출하기
+  // sectioncsr 추출하기 
+for (x in langKo.sectioncsr.content) {
+  sectionCsrTag += `<li class="show">`
+                    sectionCsrTag += `<a href="${langKo.sectioncsr.content[x].href}">
+                    <div class="img-box">
+                    <img src="${langKo.sectioncsr.content[x].src}" alt="펫푸드">
+                    </div>
+                    </a>`
+                     sectionCsrTag +=`<h3><a href="">${langKo.sectioncsr.content[x].h3}</a></h3>`
+                     sectionCsrTag +=`<div class="csr-tag d-flex">`
+                    for(y in langKo.sectioncsr.content[x].csrtag) {
+                      sectionCsrTag += `<a>${langKo.sectioncsr.content[x].csrtag[y]}</a>`
+                    }
+                    sectionCsrTag += `</div>`
+                    sectionCsrTag += `</li>`
+                    
+                    
+                    console.log(langKo.sectioncsr.content[x].csrtag[y])
+                
+}
 
-  $("#section-brand .swiper-slide").each(function () {
-    $(this).html(
-      `<div class="sh position-relative"><h3>${langKo.sectionbrand.brandlist[$(this).index()].h3}</h3>
-      <div class="dp"><p>${langKo.sectionbrand.brandlist[$(this).index()].p}</p>
-      </div></div><img src="${langKo.sectionbrand.brandlist[$(this).index()].src}" 
-      alt="${langKo.sectionbrand.brandlist[$(this).index()].alt}">`
-    );
-  })
 
-  sectionbrandText += `${langKo.sectionbrand.h2}`;
 
-  document.querySelector("#section-brand h2").innerHTML = sectionbrandText;
+$("#csr .article-list").html(sectionCsrTag);
 
-  // sectionitem 추출하기
 
-  for (x in langKo.sectionitem.mainlist) {
-    sectionitemTag += `<li class="${langKo.sectionitem.mainlist[x].cls}">
-    <a href="${langKo.sectionitem.mainlist[x].href}">${langKo.sectionitem.mainlist[x].nm}</a></li>`;
-  }
 
-  document.querySelector(".mainlist").innerHTML = sectionitemTag;
 
-  for (x in langKo.sectionitem.listgroup) {
-    sectionitemList += `<li class="${langKo.sectionitem.listgroup[x].cls}">
-    <a href="${langKo.sectionitem.listgroup[x].href}"><div>
-    <img src="${langKo.sectionitem.listgroup[x].src}" alt="${langKo.sectionitem.listgroup[x].alt}"></div></a></li>`;
-  }
-
-  document.querySelector(".listgroup ul").innerHTML = sectionitemList;
-
-  // sectioninstagram 추출하기
-
-  $("#section-instagram .instagroup1 .swiper-slide").each(function () {
-    $(this).html(
-      `<a href="#none"><img src="${langKo.sectioninstagram.instagroup1[$(this).index()].src}" 
-      alt="${langKo.sectioninstagram.instagroup1[$(this).index()].alt}"></a>`
-    )
-  })
-  $("#section-instagram .instagroup2 .swiper-slide").each(function () {
-    $(this).html(
-      `<a href="#none"><img src="${langKo.sectioninstagram.instagroup2[$(this).index()].src}" 
-      alt="${langKo.sectioninstagram.instagroup2[$(this).index()].alt}"></a>`
-    )
-  })
-
-  // footer 추출하기
-
-  for (x in langKo.footer.box) {
-    footerBox += `<div>
-    <h4>${langKo.footer.box[x].h4}</h4>
-    <p>${langKo.footer.box[x].p}</p>
-    </div>`;
-  }
-
-  document.querySelector("#ft .info").innerHTML = footerBox;
-
-  for (x in langKo.footer.family) {
-    footerFamily += `<li><a href="${langKo.footer.family[x].href}">${langKo.footer.family[x].nm}</a></li>`;
-  }
-
-  document.querySelector("#ft .family ul").innerHTML = footerFamily;
-
-  for (x in langKo.footer.tabicon) {
-    footerIcon += `<li class="${langKo.footer.tabicon[x].cls}"><a href="${langKo.footer.tabicon[x].href}">
-    <span class="ir-hidden">${langKo.footer.tabicon[x].span}</span></a></li>`;
-  }
-
-  document.querySelector("#ft .icon").innerHTML = footerIcon;
 })
+
