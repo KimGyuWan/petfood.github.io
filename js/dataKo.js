@@ -407,7 +407,7 @@ const langKo = {
         src: "./img/gyuwan/instagram/instagram10.jpg",
         alt: "인스타후기사진10"
       },
-    ]
+    ]ㅎ
   },
   sectioncsr: {
     h2: "CSR 캠페인",
@@ -531,27 +531,21 @@ let sectionCsrTag = "";
 
   // sectioncsr 추출하기 
 for (x in langKo.sectioncsr.content) {
-  sectionCsrTag += `<li class="show">`
-                    sectionCsrTag += `<a href="${langKo.sectioncsr.content[x].href}">
+  sectionCsrTag += `<li class="show"><a href="${langKo.sectioncsr.content[x].href}">
                     <div class="img-box">
                     <img src="${langKo.sectioncsr.content[x].src}" alt="펫푸드">
                     </div>
-                    </a>`
-                     sectionCsrTag +=`<h3><a href="">${langKo.sectioncsr.content[x].h3}</a></h3>`
-                     sectionCsrTag +=`<div class="csr-tag d-flex">`
+                    </a><h3><a href="">${langKo.sectioncsr.content[x].h3}</a></h3><div class="csr-tag d-flex">`
+
                     for(y in langKo.sectioncsr.content[x].csrtag) {
                       sectionCsrTag += `<a>${langKo.sectioncsr.content[x].csrtag[y]}</a>`
                     }
-                    sectionCsrTag += `</div>`
-                    sectionCsrTag += `</li>`
-                    
+
+                    sectionCsrTag += `</div></li>`
                     
                     console.log(langKo.sectioncsr.content[x].csrtag[y])
                 
 }
-
-
-
 $("#csr .article-list").html(sectionCsrTag);
 
 
